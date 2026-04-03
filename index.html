@@ -21,18 +21,20 @@
 
 <body>
   <header class="header">
-    <img class="header-logo" src="./image/logo.webp" alt="logo">
-    <nav class="header-nav">
-      <ul class="header-list">
-        <li class="header-item"><a class="header-link" href="">Home</a></li>
-        <li class="header-item"><a class="header-link" href="">About us</a></li>
-        <li class="header-item"><a class="header-link" href="">How it’s made?</a></li>
-        <li class="header-item"><a class="header-link" href="">Our products</a></li>
-        <li class="header-item"><a class="header-link" href="">Contact</a></li>
-      </ul>
-      <i class="bi bi-list"></i>
-      <button class="btn header-btn">Buy now <i class="bi bi-chevron-right"></i></button>
-    </nav>
+    <div class="container header--container">
+      <img class="header-logo" src="./image/logo.webp" alt="logo">
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="header-item"><a class="header-link" href="#">Home</a></li>
+          <li class="header-item"><a class="header-link" href="#">About us</a></li>
+          <li class="header-item"><a class="header-link" href="#">How it’s made?</a></li>
+          <li class="header-item"><a class="header-link" href="#">Our products</a></li>
+          <li class="header-item"><a class="header-link" href="#">Contact</a></li>
+        </ul>
+        <i class="bi bi-list"></i>
+        <button class="btn header-btn">Buy now <i class="bi bi-chevron-right"></i></button>
+      </nav>
+    </div>
   </header>
   <main>
     <section class="hero">
@@ -56,7 +58,6 @@
             </div>
           </div>
         </div>
-
         <div class="hero-right">
           <div class="numbers">
             <div class="number-item">
@@ -65,7 +66,7 @@
             </div>
             <div class="number-item">
               23
-              <p class="text">food trucs</p>
+              <p class="text">food trucks</p>
             </div>
           </div>
           <img src="./image/tasty-woman.webp" alt="tasty woman">
@@ -74,19 +75,20 @@
     </section>
     <section class="products">
       <div class="container products--container">
-        <p class="subtitle products--subtitle">100% NATURAL</p>
-        <h2 class="title products--title">PRODUCTS</h2>
-
+        <div class="title-holder">
+          <h3 class="subtitle products--subtitle">100% NATURAL</h3>
+          <h2 class="title products--title">PRODUCTS</h2>
+        </div>
         <div class="products-list">
 
           <!-- item -->
-          <div class="product">
-            <img src="./sass/images/icecreamsec2.webp" alt="Ice Cream" class="product-img">
+          <div class="product product--pink">
+            <img class="product-img" src="./sass/images/icecreamsec2.webp" alt="Ice Cream">
             <h3 class="product-title">Ice Cream</h3>
             <div class="product-dots">
               <i class="bi bi-three-dots"></i>
             </div>
-            <p class="product-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            <p class="text product--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et. dolore magna aliqua facilisis. </p>
             <button class="btn product--btn">
               <i class="bi bi-arrow-right-short"></i>
@@ -94,17 +96,14 @@
           </div>
           <!-- item -->
           <div class="product product--beige">
-            <img src="./sass/images/icecoffe.webp" alt="Ice Coffee" class="product-img">
+            <img class="product-img" src="./sass/images/icecoffe.webp" alt="Ice Coffee">
             <h3 class="product-title">ICE COFFEE</h3>
             <div class="product-dots">
               <i class="bi bi-three-dots"></i>
             </div>
-
-            <p class="product-text">
+            <p class="text product--text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
-              dolore magna aliqua facilisis.
-            </p>
-
+              dolore magna aliqua facilisis.</p>
             <button class="btn product--btn">
               <i class="bi bi-arrow-right-short"></i>
             </button>
@@ -112,85 +111,82 @@
 
           <!-- item -->
           <div class="product product--green">
-            <img src="./sass/images/milkshake.webp" alt="Milkshake" class="product-img">
-
+            <img class="product-img" src="./sass/images/milkshake.webp" alt="Milkshake">
             <h3 class="product-title">MILKSHAKES</h3>
-
             <div class="product-dots">
               <i class="bi bi-three-dots"></i>
             </div>
-
-            <p class="product-text">
+            <p class="text product--text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
-              dolore magna aliqua facilisis.
-            </p>
-
+              dolore magna aliqua facilisis.</p>
             <button class="btn product--btn">
               <i class="bi bi-arrow-right-short"></i>
             </button>
           </div>
-
         </div>
-
-      </div>
-
       </div>
     </section>
 
     <section class="how-made">
-      <div class="title-hm">
-        <p>TRADITION AND LOVE</p>
-        <h2>HOW IT'S MADE?</h2>
-      </div>
-
-      <div class="cow-inf">
-        <img src="./image/cow.webp" alt="cow">
-        <div class="cow-text">
-          <p>Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p>
-          <p>Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.</p>
-          <p>Aliquam erat volutpat. Aenean accumsan.</p>
-          <button><a href="#">Read more</a><i class="bi bi-chevron-right"></i></button>
+      <div class="container how-made--container">
+        <div class="title-holder">
+          <h3 class="subtitle how-made--subtitle">TRADITION AND LOVE</h3>
+          <h2 class="title how-made--title">HOW IT'S MADE?</h2>
         </div>
-      </div>
-
-      <div>
-
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="33" height="50" fill="none"><path fill="url(#a1)" d="M0 0h33v50H0z"/><defs><pattern id="a1" width="1" height="1" patternContentUnits="objectBoundingBox"><use href="#b1" transform="scale(.0303 .02)"/></pattern><image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAyCAMAAADleEJoAAAAh1BMVEUAAAD/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbrS8N+BAAAALHRSTlMAsFCg+pp9lCkcyIR1VhPw6tnMwbeljkw2JA4J9Wbt5+HUvahgWEU6LmtcF0d68N4AAAHRSURBVDjLldTrdqIwFAXgzRhAQFCwLYqXWq+9nPd/vtkJpLJ6GtfM9wOz4lEg2SegSEIiOFMJm/5jxcaIHP9oRxGzgRNxyOIfpmZ4DnoXkYmqmHD2fRg/cZyqipSzT3BKDvNOVXQ550tYzyJ1hTZPK3hVnLeoapFnf5MYrRGZF8PrF3MR0yL2t3kRkaUR5y1D9iaOWfLyAmtt5G6GmdyZ9fCotsScVyd+Jkg4Pq3Obq7EIEvixFYvh4ql/WfOZfiJFQUKWxHC9z7sDvYdQ0rplQiKfG7CZvW2nuF/3eLJI/ENr/LYK7by2BY59zQKmTM5dosXCFnYYOxc5jXfJzuseC0CFQW/W2HD677Db7o9v2PH1KOk67TX/DwJXaBdhE5Anzpz0QVGyG7SVZy0w1iXinPl+Et6i1HosmQhvS8Qd4aLZzXpB3v+I23Emkd2V3xHZZE+f7Lvjir4Y6YgMuNGiW5A49ey5ASoOsfNwj5QE58rkPGJXbuDQrPHytBzjMgntE8bjl5uO1hjx+f39T9CO973ixHZQ9vbcDguIrqJMxcOfB+orapo/XFq8dRJVEXCE2nc85Hu4fEZwIgc1KF9sOHwrvK7K7wqUFGNl0/zC/0XkpBoKizbJpYAAAAASUVORK5CYII=" id="b1" width="33" height="50" preserveAspectRatio="none"/></defs></svg>
-          <p>721</p>
-          <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+        <div class="cow-info">
+          <img class="cow-img" src="./image/cow.webp" alt="cow">
+          <div class="text-holder">
+            <p class="text text--bold">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
+              faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p>
+            <p class="text text--light">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris
+              rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+              maximus. Cras massa nibh, tincidunt.</p>
+            <p class="text text--light">Aliquam erat volutpat. Aenean accumsan.</p>
+            <a href="#" class="btn read-more-link">Read more <i class="bi bi-chevron-right"></i></a>
+          </div>
         </div>
-
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none"><path fill="url(#a2)" d="M0 0h50v50H0z"/><defs><pattern id="a2" width="1" height="1" patternContentUnits="objectBoundingBox"><use href="#b2" transform="scale(.02)"/></pattern><image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAllBMVEUAAAD/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbpbYU7LAAAAMXRSTlMAD09g9PjQ/MkVsQPVh3ljNO/sWRkJvJUsBt3DjEc+5eKspoKAbWgl6LdzVR6hnpqQ11qoPgAAAptJREFUSMeNlut2qjAUhIMNdxBEqSKiVi3eTzvv/3InF1NiIC6/Hyq6JnuzMxMkAidwx6THYkmvxEYLUGIyOwGBVbICNsTkC8CvVfIDJPw9vGZNpdoCUFdWSQpMCDlGPoAi+/sOC2Jlyn8eUUjmhJMAn8ROCODsQpFOr3npA5cF+xBbNJ8QfOVx9lAWAETZyaocUpQpOP9kkyZBX+PMKQQzcRnBZGUqjksI1NasAVxayhv7DsMR+9V1jBpKoQYUF7zFtQt/rVYY9fYEybqatXvWl+qsJqS5j+QKLmAYcMsUz4V/AU+73AAHohMDaAfto6BmlcpnnY+eSACvu8r4yEJjE99gomvwHmtNssRbHDXJjo/declORKNjDOCbvCQwYtBwA79UOL7hshDSQ3YyAFNz9zF+JfF6iY7k2K18AKDP0Tzg5d3cCvSOsxE4e9u9e+oAWeTdMhCkg4qZUCBjm6HvRQHBedZXNCcIctFLRBRngPpgLwdjCHkEiV9V26dspgBtRCl3N1Wl4sUlkOmueeCmeMrZlbvuplbc1NF9d/YoBHQcL1meuBOLUjth5O42AUzcnxtxhAdPfGrVU1JT0ft8A43gErIh/4IV4C14G/hJ+mi87px6nKa7c11HP+MmFNdbM565OlEKMkiVwOTkKBfdrA8R75LdfWGq7FIrCy/UzIeefadSmErufewBgTwPbR5L+IA5rbdXHnZVUjszGFna9+KmjsfNoGQpTdwxVlVaAIMhO5tR2amzNwfQDEkOgK8bvJwAd/nJt8Q/Nx5h391sPVuUA8DV0siKbB9OuwPLQcmcO4ytG89iQtbcPa1WMPsYIJHG8iag3kl7ODI93iRwtDPUSkS7/Oj/GvZWzWfpXNP5PjvMVx9y7/4DR2qlt3mtGk4AAAAASUVORK5CYII=" id="b2" width="50" height="50" preserveAspectRatio="none"/></defs></svg>
-          <p>16kg</p>
-          <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+        <div class="numbers-holder">
+          <div class="number">
+            <img src="./image/icon-udder.webp" alt="Udder">
+            <h2 class="title">721</h2>
+            <p class="text text--bold">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+          </div>
+          <div class="number">
+            <img src="./image/icon-apples.webp" alt="Apples">
+            <h2 class="title">16kg</h2>
+            <p class="text text--bold">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+          </div>
+          <div class="number">
+            <img src="./image/icon-heart.webp" alt="Heart">
+            <h2 class="title">84</h2>
+            <p class="text text--bold">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+          </div>
         </div>
-
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="50" fill="none"><path fill="url(#a3)" d="M0 0h44v50H0z"/><defs><pattern id="a3" width="1" height="1" patternContentUnits="objectBoundingBox"><use href="#b3" transform="scale(.02273 .02)"/></pattern><image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAyCAMAAAAQhsnYAAAAjVBMVEUAAAD/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pbr/pboPcEqoAAAALnRSTlMAcJADUAf59S0X8el41bGaiYNLDs3BvKyjlVsTEArj3dLKx6RmYEcl9kM9OB8pDKTHNgAAAlVJREFUSMftVNtyokAQbRkGEJAEMF7ASwSUqMn8/+dtn57AotHVqn3aqj0v9nQduk/fpG+cnemHMZt5oamHLuYbYz6mzpmGCN5Mh2jfOfdR73wLqEfjmQHma/jW86HPazpujOfisCIVxIg20yxhhixxoGh1WBhGTAKXzfcvsshf+FUT1fzzkpPF1zu/XFhlxJqQeZCnqn7HEk1vnKZk45WbUNIAiI24Q1/JbXnlvD4yDKEccB019EGrn1NhzISuMHbd8bVvYkxBXGpKTyDlhuGL0zPkExTwkCWlPmef9I3V8bjq7M/srEUaD564FoUCMI2klAJTj0eWKulCgtm48LIBMpuZEUwRxLG2g3RTa2dEQgwhA8ojLNOe82KgGBmr2mOJIqiFjJD42wMsfywFC6FSqsKHtlVjH/EOnJeWGA0saXxCNIICaBkRJRiYxMOgl2BE6QbTvUfG/DdpBFOHdmHb++TWrnuosUgwUO+RK1FWl82quO4jeoWA8Ir+mcwg99ha2E5luIcZZ8xlSjPpgF1gL4CBcMBOEakdLIQDAq9bb81N3UpotZTrlBBjueGlksBbbr0mQQAh1m6b0alfnVHT2mgQ0d93gZtWdAcKd15cLKup9W2urs3VykNssr7FXSeQfpkKV1qVP7llhdu9lojF3AbX3GAry/oDMbv94tJX+PL/cQOuj4zrgVxo810S3Mw5CfrnxCq7gxwd9WIlJcceup/TfTSQssvyPNtBQkN/RMukDruWHkDVHbdW9Ai4lJCBS3mE/qz+k/9lsheG3tNk4K/JvwAtLWwBEdlSUgAAAABJRU5ErkJggg==" id="b3" width="44" height="50" preserveAspectRatio="none"/></defs></svg>
-          <p>84</p>
-          <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-        </div>
-
       </div>
     </section>
 
     <section class="reviews">
-      <img src="./image/galleryPhoto.webp" alt="galleryPhoto">
-      <img class="reviews__photo" src="./image/reviewsPhotoWoman.png" alt="photoOfWoman">
-      <div class="reviews__paragraph">
-        <p class="reviews__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc,
-          accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+      <div class="container reviews--container">
+        <img class="gallery-photo" src="./image/galleryPhoto.webp" alt="gallery photo">
+        <div class="container reviews--container">
+          <img class="reviews-photo" src="./image/reviewsPhotoWoman.png" alt="woman">
+          <div class="reviews-paragraph">
+            <p class="text reviews--text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem.
+              In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+          </div>
+          <i class="bi bi-three-dots"></i>
+          <p class="reviews-name">Emily, Los Angeles</p>
+          <div class="reviews-dots">
+            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.2399 5.85484C12.4646 5.60772 12.4429 5.22897 12.1915 5.00908L6.65189 0.161935C6.40045 -0.0579491 5.99732 -0.0533429 5.75118 0.172319L0.19278 5.26751C-0.0533671 5.49318 -0.0654482 5.87145 0.166032 6.11206L0.305389 6.25719C0.536587 6.49781 0.910293 6.52649 1.13955 6.32107L1.55495 5.94907V11.3953C1.55495 11.7295 1.82571 12 2.15962 12H4.32629C4.6602 12 4.93096 11.7295 4.93096 11.3953V7.58515H7.69458V11.3953C7.68977 11.7292 7.92869 11.9998 8.26259 11.9998H10.5587C10.8926 11.9998 11.1634 11.7292 11.1634 11.3951V6.02575C11.1634 6.02575 11.2781 6.12628 11.4197 6.25069C11.561 6.37485 11.8577 6.2753 12.0824 6.02794L12.2399 5.85484Z"
+                fill="rgba(217, 217, 217, 1)" />
+            </svg>
+            <i class="bi bi-circle-fill"></i>
+            <i class="bi bi-circle-fill"></i>
+          </div>
+        </div>
       </div>
-      <i class="bi bi-three-dots"></i>
-      <p class="reviews__name">Emily, Los Angeles</p>
-      <svg class="reviews__houseDots" xmlns="http://www.w3.org/2000/svg" width="73" height="12" fill="none">
-        <circle cx="36.395" cy="6" r="6" fill="#d9d9d9" />
-        <path fill="#d31342"
-          d="M12.2399 5.85484c.2247-.24712.203-.62587-.0484-.84576L6.65189.161935c-.25144-.2198841-.65457-.2152779-.90071.010384L.19278 5.26751c-.2461471.22567-.2582282.60394-.026748.84455l.139357.14513c.231198.24062.604904.2693.834161.06388l.4154-.372v5.44623c0 .3342.27076.6047.60467.6047h2.16667c.33391 0 .60467-.2705.60467-.6047V7.58515h2.76362v3.81015c-.00481.3339.23411.6045.56801.6045h2.29611c.3339 0 .6047-.2706.6047-.6047V6.02575s.1147.10053.2563.22494c.1413.12416.438.02461.6627-.22275z" />
-        <circle cx="66.395" cy="6" r="6" fill="#d9d9d9" />
-      </svg>
     </section>
     <section></section>
   </main>
