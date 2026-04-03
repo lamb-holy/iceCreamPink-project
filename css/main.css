@@ -1,0 +1,90 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+}
+
+.how-made {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #FFF5F6;
+}
+.how-made .title-holder {
+  display: flex;
+  gap: 15px;
+  margin-top: 125px;
+  flex-direction: column;
+  text-align: center;
+}
+.how-made .title-holder .how-made--subtitle {
+  color: #FFA5BA;
+  font-size: 18px;
+  font-family: "Titan One";
+}
+.how-made .title-holder .how-made--title {
+  color: #d41443;
+  font-size: 34px;
+  font-family: "Titan One";
+}
+.how-made .cow-info .cow-img {
+  width: 280px;
+  height: 279px;
+}
+.how-made .cow-info .text-holder {
+  font-size: 12px;
+  font-family: "DM Sans";
+}
+.how-made .cow-info .text-holder .text--bold {
+  color: #000000;
+}
+.how-made .cow-info .text-holder .text--light {
+  color: #907E82;
+}
+.how-made .cow-info .text-holder button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 22px;
+  width: 176px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 39px;
+}
+.how-made .cow-info .text-holder button:hover {
+  background-color: #ECEBEB;
+}
+.how-made .cow-info .text-holder button .read-more-link {
+  color: #d41443;
+  text-align: center;
+  font-family: "DM Sans";
+  padding-top: 8px;
+  font-size: 14px;
+}
+.how-made .numbers-holder {
+  display: flex;
+  gap: 38px;
+  flex-direction: column;
+  margin-bottom: 145px;
+}
+.how-made .numbers-holder .number .udder {
+  width: 33px;
+  height: 50px;
+}
+.how-made .numbers-holder .number .apples {
+  width: 50px;
+  height: 50px;
+}
+.how-made .numbers-holder .number .heart {
+  width: 44px;
+  height: 50px;
+}
+.how-made .numbers-holder .number .title {
+  font-size: 36px;
+  color: #d41443;
+  font-family: "Titan One";
+}
+.how-made .numbers-holder .number .text--bold {
+  font-size: 12px;
+  font-family: "DM Sans";
+  color: #000000;
+}

@@ -1,60 +1,106 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+.how-made {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: $color-pink-bg;
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+	& .title-holder {
+		display: flex;
+		gap: 15px;
+		margin-top: 125px;
+		flex-direction: column;
+		text-align: center;
 
-a {
-    text-decoration: none;
-    display: inline-block;
-}
-* {
-    box-sizing: border-box;
-}
+		& .how-made--subtitle {
+			color: $color-pink-text;
+			font-size: 18px;
+			font-family: "Titan One";
+		}
 
-ul {
-    list-style: none;
+		& .how-made--title {
+			color: $color-text-red;
+			font-size: 34px;
+			font-family: "Titan One";
+		}
+	}
+
+	& .cow-info {
+
+		& .cow-img {
+			width: 280px;
+			height: 279px;
+		}
+
+		& .text-holder {
+			font-size: 12px;
+			font-family: "DM Sans";
+			
+			& .text--bold {
+				color: $color-black;
+			}
+
+			& .text--light {
+				color: $color-light-text;
+			}
+
+			& button {
+				background-color: $color-dots;
+				border: none;
+				border-radius: 22px;
+				width: 176px;
+				height: 44px;
+				display: flex;
+				justify-content: center;
+				margin-bottom: 39px;
+
+				&:hover {
+					background-color: $color-btn-hover;
+				}
+
+				& .read-more-link {
+					color: $color-text-red;
+					text-align: center;
+					font-family: "DM Sans";
+					padding-top: 8px;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	& .numbers-holder {
+		display: flex;
+		gap: 38px;
+		flex-direction: column;
+		margin-bottom: 145px;
+
+		& .number {
+			& .udder {
+				width: 33px;
+				height: 50px;
+			}
+
+			& .apples {
+				width: 50px;
+				height: 50px;
+			}
+
+			& .heart {
+				width: 44px;
+				height: 50px;
+			}
+
+			& .title {
+				font-size: 36px;
+				color: $color-text-red;
+				font-family: "Titan One";
+			}
+
+			& .text--bold {
+				font-size: 12px;
+				font-family: "DM Sans";
+				color: $color-black;
+			}
+		}
+	}
 }
