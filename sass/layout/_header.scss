@@ -1,0 +1,26 @@
+.header {
+    position: absolute;
+    width: 320px;
+    height: 60px;
+    padding: 5px 0;
+    z-index: 99999;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-list {
+        display: none;
+    }
+
+    .header-btn {
+        display: none;
+    }
+
+    .bi.bi-list {
+        color: $color-text-red;
+        font-size: 25px;
+    }
+}

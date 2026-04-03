@@ -1,0 +1,74 @@
+body {
+    width: 320px;
+}
+
+.hero {
+    width: 100%;
+    height: 502px;
+    background: RGBA(255, 165, 186, 1);
+    background: radial-gradient(circle at 70% 50%,
+        rgba(255, 165, 186, 1) 50%,
+        rgba(255, 184, 202, 1) 15%);
+    padding: 5px;
+
+    .hero--container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        background: url("../images/icecream.webp") center / cover no-repeat;
+
+        .title-holder {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .title {
+                width: 218px;
+                font-family: "Titan One", sans-serif;
+                font-weight: 400;
+                font-size: 26px;
+                line-height: 100%;
+                letter-spacing: 4%;
+                color: white;
+
+                span {
+                    font-size: 48px;
+                    line-height: 96%;
+                    letter-spacing: 0%;
+                    color: $color-text-red;
+                }
+            }
+        }
+
+
+        .btn {
+            font-family: "DM Sans", sans-serif;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+            background-color: $color-text-white;
+            color: $color-text-red;
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+
+        .pink--btn {
+            background-color: $color-text-red;
+            color: $color-text-white;
+        }
+    }
+
+    
+    .milk-holder {
+        display: none;
+    }
+
+    .hero-right {
+        display: none;
+    }
+}
