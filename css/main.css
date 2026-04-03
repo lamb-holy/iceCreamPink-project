@@ -1,0 +1,27 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  padding-top: 154px;
+  text-align: center;
+  gap: 30px;
+}
+.reviews-photo {
+  width: 85px;
+}
+.reviews-paragraph {
+  width: 280px;
+  background-color: #fafafa;
+  padding: 80px 50px 50px 50px;
+}
+.reviews--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gallery-photo {
+  width: 100%;
+}
