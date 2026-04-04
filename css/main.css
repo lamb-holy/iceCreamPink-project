@@ -22,6 +22,115 @@
   font-size: 25px;
 }
 
+.products--container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.products--subtitle {
+  font-family: "Titan One", cursive;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #ffa3b1;
+  margin-bottom: 15px;
+}
+
+.products--title {
+  font-family: "Titan One", cursive;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #d41443;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.products-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product {
+  position: relative;
+  width: 280px;
+  margin: 60px auto 40px;
+  padding: 160px 20px 40px;
+  border-radius: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product--pink {
+  background-color: #ffb8ca;
+}
+.product--beige {
+  background-color: #f0d1a5;
+}
+.product--green {
+  background-color: #c2e297;
+}
+.product-img {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: auto;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+}
+.product-title {
+  font-family: "Titan One", cursive;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.product-dots {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 15px;
+  line-height: 1;
+}
+.product--text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+.product--btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.8s ease-out i;
+  transition-color: #ffb7c5;
+  transition-font-size: 24px;
+}
+.product--btn:hover {
+  transform: translate(5px, -5px) rotate(-45deg);
+}
+.product--pink .product--btn i {
+  color: #ff6b8e;
+}
+.product--beige .product--btn i {
+  color: #d6934d;
+}
+.product--green .product--btn i {
+  color: #84a15b;
+}
+
 .reviews {
   display: flex;
   flex-direction: column;
