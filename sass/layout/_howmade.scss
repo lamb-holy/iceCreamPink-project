@@ -1,0 +1,106 @@
+.howmade {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: $color-pink-bg;
+
+	& .title-holder {
+		display: flex;
+		gap: 15px;
+		margin-top: 125px;
+		flex-direction: column;
+		text-align: center;
+
+		& .how-made--subtitle {
+			color: $color-pink-text;
+			font-size: 18px;
+			font-family: "Titan One";
+		}
+
+		& .how-made--title {
+			color: $color-text-red;
+			font-size: 34px;
+			font-family: "Titan One";
+		}
+	}
+
+	& .cow-info {
+
+		& .cow-img {
+			width: 280px;
+			height: 279px;
+		}
+
+		& .text-holder {
+			font-size: 12px;
+			font-family: "DM Sans";
+			
+			& .text--bold {
+				color: $color-black;
+			}
+
+			& .text--light {
+				color: $color-light-text;
+			}
+
+			& button {
+				background-color: $color-dots;
+				border: none;
+				border-radius: 22px;
+				width: 176px;
+				height: 44px;
+				display: flex;
+				justify-content: center;
+				margin-bottom: 39px;
+
+				&:hover {
+					background-color: $color-btn-hover;
+				}
+
+				& .read-more-link {
+					color: $color-text-red;
+					text-align: center;
+					font-family: "DM Sans";
+					padding-top: 8px;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	& .numbers-holder {
+		display: flex;
+		gap: 38px;
+		flex-direction: column;
+		margin-bottom: 145px;
+
+		& .number {
+			& .udder {
+				width: 33px;
+				height: 50px;
+			}
+
+			& .apples {
+				width: 50px;
+				height: 50px;
+			}
+
+			& .heart {
+				width: 44px;
+				height: 50px;
+			}
+
+			& .title {
+				font-size: 36px;
+				color: $color-text-red;
+				font-family: "Titan One";
+			}
+
+			& .text--bold {
+				font-size: 12px;
+				font-family: "DM Sans";
+				color: $color-black;
+			}
+		}
+	}
+}
