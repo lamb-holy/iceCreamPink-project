@@ -208,8 +208,7 @@ body {
 }
 .reviews-paragraph {
   width: 280px;
-  background-color: #fafafa;
-  background-image: url("../images/linesBackground.png");
+  background-image: url("../images/linesBackground.webp");
   background-repeat: no-repeat;
   background-position: center;
   padding: 80px 50px 50px 50px;
@@ -229,6 +228,11 @@ body {
   color: #D9D9D9;
 }
 
+@media (min-width: 768px) {
+  .reviews-paragraph {
+    width: 620px;
+  }
+}
 .howmade {
   display: flex;
   flex-direction: column;
