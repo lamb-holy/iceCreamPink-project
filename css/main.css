@@ -176,6 +176,7 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  padding: 10px;
   transition: transform 0.8s ease-out i;
   transition-color: #ffb7c5;
   transition-font-size: 24px;
@@ -208,6 +209,9 @@ body {
 .reviews-paragraph {
   width: 280px;
   background-color: #fafafa;
+  background-image: url("../images/linesBackground.png");
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 80px 50px 50px 50px;
   margin-block: 40px;
 }
