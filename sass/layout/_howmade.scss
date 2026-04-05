@@ -1,7 +1,6 @@
 .howmade {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 	background-color: $color-pink-bg;
 
 	& .title-holder {
@@ -100,6 +99,89 @@
 				font-size: 12px;
 				font-family: "DM Sans";
 				color: $color-black;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.howmade {
+		width: 768px;
+
+		& .title-holder {
+			margin-top: 130px;
+
+			& .how-made--subtitle {
+				font-size: 26px;
+			}
+
+			& .how-made--title {
+				font-size: 48px;
+			}
+		}
+
+		& .cow-info {
+			display: flex;
+			flex-direction: row;
+			gap: 17px;
+
+			& .cow-img {
+				width: 340px;
+				height: 339px;
+				margin-top: 50px;
+			}
+
+			& .text-holder {
+				margin-top: 100px;
+
+				& .text--bold {
+					font-size: 14px;
+				}
+
+				& .text--light {
+					font-size: 14px;
+				}
+
+				& button {
+					width: 176px;
+					height: 44px;
+					margin-top: 62px;
+					margin-bottom: 66px;
+				}
+			}
+		}
+
+		& .numbers-holder {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			gap: 60px;
+
+			& .number {
+				margin-bottom: 242px;
+
+				& .udder {
+					width: 33px;
+					height: 50px;
+				}
+
+				& .apples {
+					width: 50px;
+					height: 50px;
+				}
+
+				& .heart {
+					width: 44px;
+					height: 50px;
+				}
+
+				& .title {
+					font-size: 48px;
+				}
+
+				& .text--bold {
+					font-size: 14px;
+				}
 			}
 		}
 	}
