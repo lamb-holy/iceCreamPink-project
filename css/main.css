@@ -211,18 +211,34 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .products-list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 24px;
+  }
 }
 
 .product {
   position: relative;
   width: 280px;
-  margin: 60px auto 40px;
+  margin-top: 60px;
   padding: 160px 20px 40px;
   border-radius: 24px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .product {
+    width: calc((100% - 48px) / 3);
+    margin-top: 80px;
+    padding: 140px 20px 40px;
+  }
 }
 .product--pink {
   background-color: #ffb8ca;
@@ -235,12 +251,17 @@ body {
 }
 .product-img {
   position: absolute;
-  top: -50px;
+  top: -60px;
   left: 50%;
   transform: translateX(-50%);
   width: 200px;
-  height: auto;
   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+}
+@media (min-width: 768px) {
+  .product-img {
+    width: 180px;
+    top: -70px;
+  }
 }
 .product-title {
   font-family: "Titan One", cursive;
@@ -262,6 +283,11 @@ body {
   margin-bottom: 25px;
   font-weight: 400;
 }
+@media (min-width: 768px) {
+  .product--text {
+    font-size: 12px;
+  }
+}
 .product--btn {
   width: 40px;
   height: 40px;
@@ -273,9 +299,11 @@ body {
   align-items: center;
   cursor: pointer;
   padding: 10px;
-  transition: transform 0.8s ease-out i;
-  transition-color: #ffb7c5;
-  transition-font-size: 24px;
+  transition: transform 0.8s ease-out;
+}
+.product--btn i {
+  color: #ffb7c5;
+  font-size: 24px;
 }
 .product--btn:hover {
   transform: translate(5px, -5px) rotate(-45deg);
