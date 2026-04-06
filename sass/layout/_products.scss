@@ -27,16 +27,18 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	gap: 20px;
 	@media (min-width: 768px) {
 		flex-direction: row;
-		justify-content: center;
-		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: stretch;
+		gap: 24px;
 	}
 }
 .product {
 	position: relative;
 	width: 280px;
-	margin: 60px auto 40px;
+	margin-top: 60px;
 	padding: 160px 20px 40px;
 	border-radius: 24px;
 	text-align: center;
@@ -44,10 +46,10 @@
 	flex-direction: column;
 	align-items: center;
 	@media (min-width: 768px) {
-		width: 220px;
-		margin: 60px 15px 40px;
+		width: calc((100% - 48px) / 3);
+		margin-top: 80px;
+		padding: 140px 20px 40px;
 	}
-
 	&--pink {
 		background-color: #ffb8ca;
 	}
@@ -60,12 +62,15 @@
 
 	&-img {
 		position: absolute;
-		top: -50px;
+		top: -60px;
 		left: 50%;
 		transform: translateX(-50%);
 		width: 200px;
-		height: auto;
 		filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+		@media (min-width: 768px) {
+			width: 180px;
+			top: -70px;
+		}
 	}
 
 	&-title {
@@ -89,6 +94,9 @@
 		color: #ffffff;
 		margin-bottom: 25px;
 		font-weight: 400;
+		@media (min-width: 768px) {
+			font-size: 12px;
+		}
 	}
 
 	&--btn {
