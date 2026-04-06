@@ -23,10 +23,14 @@ body {
         width: 100%;
         height: 100%;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         background: url("../images/icecream.webp") center / cover no-repeat;
 
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
 
         .hero-left {
             display: flex;
