@@ -566,6 +566,69 @@ body {
     font-size: 14px;
   }
 }
+@media (min-width: 1024px) {
+  .howmade {
+    width: 100%;
+  }
+  .howmade .title-holder {
+    margin-top: 125px;
+  }
+  .howmade .title-holder .how-made--subtitle {
+    font-size: 30px;
+  }
+  .howmade .title-holder .how-made--title {
+    font-size: 58px;
+  }
+  .howmade .cow-info {
+    display: flex;
+    flex-direction: row;
+    gap: 74px;
+  }
+  .howmade .cow-info .cow-img {
+    width: 516px;
+    height: 516px;
+    margin-top: 55px;
+  }
+  .howmade .cow-info .text-holder {
+    margin-top: 106px;
+  }
+  .howmade .cow-info .text-holder .text--bold {
+    font-size: 16px;
+  }
+  .howmade .cow-info .text-holder button {
+    width: 176px;
+    height: 44px;
+    margin-top: 45px;
+    margin-bottom: 146px;
+  }
+  .howmade .numbers-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+  }
+  .howmade .numbers-holder .number {
+    margin-bottom: 310px;
+  }
+  .howmade .numbers-holder .number .udder {
+    width: 33px;
+    height: 50px;
+  }
+  .howmade .numbers-holder .number .apples {
+    width: 50px;
+    height: 50px;
+  }
+  .howmade .numbers-holder .number .heart {
+    width: 44px;
+    height: 50px;
+  }
+  .howmade .numbers-holder .number .title {
+    font-size: 58px;
+  }
+  .howmade .numbers-holder .number .text--bold {
+    font-size: 16px;
+  }
+}
 .gallery-photo {
   width: 100%;
   position: relative;
