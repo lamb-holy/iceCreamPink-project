@@ -11,6 +11,10 @@
         padding: 10px 0;
     }
 
+    @media (min-width: 1024px) {
+        padding: 20px 0;
+    }
+
     .header-logo {
         max-width: 100%;
     }
@@ -21,8 +25,38 @@
         align-items: center;
     }
 
+    .header-holder {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+    }
+
     .header-list {
         display: none;
+
+        @media (min-width: 1024px) {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            list-style: none;
+            margin-top: 10px;
+
+            .header-link {
+                font-family: "DM Sans", sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-decoration: none;
+                color: white;
+                transition: transform 0.3s ease, color 0.3s ease;
+
+                &:hover {
+                    color: $color-text-red;
+                }
+            }
+        }
     }
 
     .header--btn {
@@ -54,8 +88,12 @@
         gap: 20px;
     }
 
-    .bi.bi-list {
+    .bi-list {
         color: $color-text-red;
         font-size: 25px;
+
+        @media (min-width: 1024px) {
+            display: none;
+        }
     }
 }

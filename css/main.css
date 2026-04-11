@@ -12,6 +12,11 @@
     padding: 10px 0;
   }
 }
+@media (min-width: 1024px) {
+  .header {
+    padding: 20px 0;
+  }
+}
 .header .header-logo {
   max-width: 100%;
 }
@@ -20,8 +25,36 @@
   justify-content: space-between;
   align-items: center;
 }
+.header .header-holder {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
 .header .header-list {
   display: none;
+}
+@media (min-width: 1024px) {
+  .header .header-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    margin-top: 10px;
+  }
+  .header .header-list .header-link {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  .header .header-list .header-link:hover {
+    color: #d41443;
+  }
 }
 .header .header--btn {
   display: none;
@@ -50,9 +83,14 @@
   flex-direction: row;
   gap: 20px;
 }
-.header .bi.bi-list {
+.header .bi-list {
   color: #d41443;
   font-size: 25px;
+}
+@media (min-width: 1024px) {
+  .header .bi-list {
+    display: none;
+  }
 }
 
 body {
@@ -78,6 +116,13 @@ body {
     background: radial-gradient(circle at 60% 45%, rgb(255, 165, 186) 30%, rgb(255, 184, 202) 15%);
     height: 399px;
     padding: 80px 20px 0 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero {
+    background: radial-gradient(circle at 60% 50%, rgb(255, 165, 186) 40%, rgb(255, 184, 202) 15%);
+    height: 665px;
+    padding: 100px 20px 0 20px;
   }
 }
 .hero .hero--container {
@@ -110,17 +155,31 @@ body {
     left: 45%;
   }
 }
+@media (min-width: 1024px) {
+  .hero .hero--container .icecream-img {
+    width: 236px;
+    top: 2%;
+    left: 40%;
+  }
+}
 .hero .hero--container .hero-left {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  justify-content: space-between;
 }
 .hero .hero--container .title-holder {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.hero .hero--container .title-holder .title {
+@media (min-width: 1024px) {
+  .hero .hero--container .title-holder {
+    margin-top: 50px;
+    margin-left: 50px;
+    gap: 15px;
+  }
+}
+.hero .hero--container .title-holder .hero--title {
   width: 218px;
   font-family: "Titan One", sans-serif;
   font-weight: 400;
@@ -130,20 +189,31 @@ body {
   color: white;
 }
 @media (min-width: 768px) {
-  .hero .hero--container .title-holder .title {
+  .hero .hero--container .title-holder .hero--title {
     font-size: 22px;
     width: 162px;
   }
 }
-.hero .hero--container .title-holder .title span {
+@media (min-width: 1024px) {
+  .hero .hero--container .title-holder .hero--title {
+    font-size: 38px;
+    width: 277px;
+  }
+}
+.hero .hero--container .title-holder .hero--title span {
   font-size: 48px;
   line-height: 96%;
   letter-spacing: 0%;
   color: #d41443;
 }
 @media (min-width: 768px) {
-  .hero .hero--container .title-holder .title span {
+  .hero .hero--container .title-holder .hero--title span {
     font-size: 34px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero .hero--container .title-holder .hero--title span {
+    font-size: 58px;
   }
 }
 .hero .hero--container .btn {
@@ -159,6 +229,12 @@ body {
   padding: 8px 15px;
   border-radius: 20px;
 }
+@media (min-width: 1024px) {
+  .hero .hero--container .btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
 .hero .hero--container .pink--btn {
   background-color: #d41443;
   color: #ffffff;
@@ -171,11 +247,19 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    margin-bottom: 30px;
   }
   .hero .milk-holder .milk {
     width: 124px;
-    height: 126px;
+    height: auto;
   }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .hero .milk-holder .milk {
+    width: 188px;
+  }
+}
+@media (min-width: 768px) {
   .hero .milk-holder .hero-text {
     font-family: "DM Sans", sans-serif;
     font-weight: 300;
@@ -185,13 +269,32 @@ body {
     color: #ffffff;
     margin-bottom: 5px;
   }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .hero .milk-holder .hero-text {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
   .hero .milk-holder .milk-right-side {
     width: 114px;
   }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .hero .milk-holder .milk-right-side {
+    width: 200px;
+  }
+}
+@media (min-width: 768px) {
   .hero .milk-holder .milk--btn {
     font-size: 10px;
     padding: 5px;
     border-radius: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .hero .milk-holder {
+    margin-bottom: 50px;
   }
 }
 .hero .hero-right {
@@ -205,8 +308,15 @@ body {
   }
   .hero .hero-right .tasty-woman {
     width: 168px;
-    height: 133px;
+    height: auto;
   }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .hero .hero-right .tasty-woman {
+    width: 293px;
+  }
+}
+@media (min-width: 768px) {
   .hero .hero-right .number-item {
     position: relative;
     font-family: "Titan One", sans-serif;
@@ -218,6 +328,13 @@ body {
     color: #d41443;
     z-index: 999;
   }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .hero .hero-right .number-item {
+    font-size: 46px;
+  }
+}
+@media (min-width: 768px) {
   .hero .hero-right .number-item .text {
     font-family: "DM Sans", sans-serif;
     font-weight: 400;
@@ -226,6 +343,13 @@ body {
     letter-spacing: 0%;
     color: #ffffff;
   }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .hero .hero-right .number-item .text {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
   .hero .hero-right .number-item .white-dot {
     position: absolute;
     top: -3px;
@@ -235,6 +359,13 @@ body {
     height: 16px;
     border-radius: 50%;
     z-index: -1;
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .hero .hero-right .number-item .white-dot {
+    width: 30px;
+    height: 30px;
+    top: -6px;
   }
 }
 

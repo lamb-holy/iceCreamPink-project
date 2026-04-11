@@ -27,6 +27,14 @@ body {
         padding: 80px 20px 0 20px;
     }
 
+    @media (min-width: 1024px) {
+        background: radial-gradient(circle at 60% 50%,
+            rgba(255, 165, 186, 1) 40%,
+            rgba(255, 184, 202, 1) 15%);
+        height: 665px;
+        padding: 100px 20px 0 20px;
+    }
+
     .hero--container {
         position: relative;
         width: 100%;
@@ -54,19 +62,31 @@ body {
                 top: -6%;
                 left: 45%;
             }
+
+            @media (min-width: 1024px) {
+                width: 236px;
+                top: 2%;
+                left: 40%;
+            }
         }
 
         .hero-left {
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            justify-content: space-between;
         }
+
         .title-holder {
             display: flex;
             flex-direction: column;
             gap: 10px;
 
-            .title {
+            @media (min-width: 1024px) {
+                margin-top: 50px;
+                margin-left: 50px;
+                gap: 15px;
+            }
+            .hero--title {
                 width: 218px;
                 font-family: "Titan One", sans-serif;
                 font-weight: 400;
@@ -80,6 +100,11 @@ body {
                     width: 162px;
                 }
 
+                @media (min-width: 1024px) {
+                    font-size: 38px;
+                    width: 277px;
+                }
+
                 span {
                     font-size: 48px;
                     line-height: 96%;
@@ -89,10 +114,13 @@ body {
                     @media (min-width: 768px) {
                         font-size: 34px;
                     }
+
+                    @media (min-width: 1024px) {
+                        font-size: 58px;
+                    }
                 }
             }
         }
-
 
         .btn {
             font-family: "DM Sans", sans-serif;
@@ -106,6 +134,11 @@ body {
             color: $color-text-red;
             padding: 8px 15px;
             border-radius: 20px;
+
+            @media (min-width: 1024px) {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
         }
 
         .pink--btn {
@@ -113,7 +146,6 @@ body {
             color: $color-text-white;
         }
     }
-
     
     .milk-holder {
         display: none;
@@ -122,10 +154,15 @@ body {
             display: flex;
             flex-direction: row;
             align-items: flex-end;
+            margin-bottom: 30px;
 
             .milk {
                 width: 124px;
-                height: 126px;
+                height: auto;
+
+                @media (min-width: 1024px) {
+                    width: 188px;
+                }
             }
 
             .hero-text {
@@ -136,10 +173,18 @@ body {
                 letter-spacing: 0%;
                 color: $color-text-white;
                 margin-bottom: 5px;
+
+                @media (min-width: 1024px) {
+                    font-size: 14px;
+                }
             }
 
             .milk-right-side {
                 width: 114px;
+
+                @media (min-width: 1024px) {
+                    width: 200px;
+                }
             }
 
             .milk--btn {
@@ -147,6 +192,10 @@ body {
                 padding: 5px;
                 border-radius: 50%;
             }
+        }
+
+        @media (min-width: 1024px) {
+            margin-bottom: 50px;
         }
     }
 
@@ -160,7 +209,11 @@ body {
 
             .tasty-woman {
                 width: 168px;
-                height: 133px;
+                height: auto;
+                
+                @media (min-width: 1024px) {
+                    width: 293px;
+                }
             }
 
             .number-item {
@@ -174,6 +227,10 @@ body {
                 color: $color-text-red;
                 z-index: 999;
 
+                @media (min-width: 1024px) {
+                    font-size: 46px;
+                }
+
                 .text {
                     font-family: "DM Sans", sans-serif;
                     font-weight: 400;
@@ -181,6 +238,10 @@ body {
                     line-height: 100%;
                     letter-spacing: 0%;
                     color: $color-text-white;
+
+                    @media (min-width: 1024px) {
+                        font-size: 14px;
+                    }
                 }
 
                 .white-dot {
@@ -192,6 +253,12 @@ body {
                     height: 16px;
                     border-radius: 50%;
                     z-index: -1;
+
+                    @media (min-width: 1024px) {
+                        width: 30px;
+                        height: 30px;
+                        top: -6px;
+                    }
                 }
             }
         }
