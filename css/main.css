@@ -374,6 +374,12 @@ body {
   padding-bottom: 60px;
   text-align: center;
 }
+@media (min-width: 1024px) {
+  .products--container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
 
 .products--subtitle {
   font-family: "Titan One", cursive;
@@ -383,6 +389,12 @@ body {
   text-transform: uppercase;
   color: #ffa3b1;
   margin-bottom: 15px;
+}
+@media (min-width: 1024px) {
+  .products--subtitle {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
 }
 
 .products--title {
@@ -394,6 +406,12 @@ body {
   color: #d41443;
   letter-spacing: 0.04em;
   margin: 0;
+}
+@media (min-width: 1024px) {
+  .products--title {
+    font-size: 48px;
+    margin-bottom: 60px;
+  }
 }
 
 .products-list {
@@ -408,6 +426,11 @@ body {
     justify-content: space-between;
     align-items: stretch;
     gap: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .products-list {
+    gap: 32px;
   }
 }
 
@@ -427,6 +450,13 @@ body {
     width: calc((100% - 48px) / 3);
     margin-top: 80px;
     padding: 140px 20px 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .product {
+    width: 330px;
+    padding: 165px 40px 40px;
+    margin-top: 100px;
   }
 }
 .product--pink {
@@ -452,12 +482,23 @@ body {
     top: -70px;
   }
 }
+@media (min-width: 1024px) {
+  .product-img {
+    width: 250px;
+    top: -100px;
+  }
+}
 .product-title {
   font-family: "Titan One", cursive;
   font-size: 20px;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 10px;
+}
+@media (min-width: 1024px) {
+  .product-title {
+    font-size: 24px;
+  }
 }
 .product-dots {
   color: #ffffff;
@@ -475,6 +516,12 @@ body {
 @media (min-width: 768px) {
   .product--text {
     font-size: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  .product--text {
+    font-size: 14px;
+    line-height: 1.7;
   }
 }
 .product--btn {
@@ -498,13 +545,13 @@ body {
   transform: translate(5px, -5px) rotate(-45deg);
 }
 .product--pink .product--btn i {
-  color: #ff6b8e;
+  color: #d41443;
 }
 .product--beige .product--btn i {
-  color: #d6934d;
+  color: #d41443;
 }
 .product--green .product--btn i {
-  color: #84a15b;
+  color: #d41443;
 }
 
 .reviews {
