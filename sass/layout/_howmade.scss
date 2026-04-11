@@ -186,3 +186,82 @@
 		}
 	}
 }
+
+@media (min-width:1024px) {
+	.howmade {
+		width: 100%;
+
+		& .title-holder {
+			margin-top: 125px;
+
+			& .how-made--subtitle {
+				font-size: 30px;
+			}
+
+			& .how-made--title {
+				font-size: 58px;
+			}
+		}
+
+		& .cow-info {
+			display: flex;
+			flex-direction: row;
+			gap: 74px;
+
+			& .cow-img {
+				width: 516px;
+				height: 516px;
+				margin-top: 55px;
+			}
+
+			& .text-holder {
+				margin-top: 106px;
+
+				& .text--bold {
+					font-size: 16px;
+				}
+
+				& button {
+					width: 176px;
+					height: 44px;
+					margin-top: 45px;
+					margin-bottom: 146px;
+				}
+			}
+		}
+
+			& .numbers-holder {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				gap: 60px;
+
+				& .number {
+					margin-bottom: 310px;
+
+					& .udder {
+						width: 33px;
+						height: 50px;
+					}
+
+					& .apples {
+						width: 50px;
+						height: 50px;
+					}
+
+					& .heart {
+						width: 44px;
+						height: 50px;
+					}
+
+					& .title {
+						font-size: 58px;
+					}
+
+					& .text--bold {
+						font-size: 16px;
+					}
+				}
+			}
+	}
+}

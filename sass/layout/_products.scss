@@ -2,6 +2,10 @@
 	padding-top: 60px;
 	padding-bottom: 60px;
 	text-align: center;
+	@media (min-width: 1024px) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
 }
 .products--subtitle {
 	font-family: 'Titan One', cursive;
@@ -11,6 +15,10 @@
 	text-transform: uppercase;
 	color: #ffa3b1;
 	margin-bottom: 15px;
+	@media (min-width: 1024px) {
+		font-size: 22px;
+		margin-bottom: 16px;
+	}
 }
 
 .products--title {
@@ -22,6 +30,10 @@
 	color: #d41443;
 	letter-spacing: 0.04em;
 	margin: 0;
+	@media (min-width: 1024px) {
+		font-size: 48px;
+		margin-bottom: 60px;
+	}
 }
 .products-list {
 	display: flex;
@@ -33,6 +45,9 @@
 		justify-content: space-between;
 		align-items: stretch;
 		gap: 24px;
+	}
+	@media (min-width: 1024px) {
+		gap: 32px;
 	}
 }
 .product {
@@ -49,6 +64,11 @@
 		width: calc((100% - 48px) / 3);
 		margin-top: 80px;
 		padding: 140px 20px 40px;
+	}
+	@media (min-width: 1024px) {
+		width: 330px;
+		padding: 165px 40px 40px;
+		margin-top: 100px;
 	}
 	&--pink {
 		background-color: #ffb8ca;
@@ -71,6 +91,10 @@
 			width: 180px;
 			top: -70px;
 		}
+		@media (min-width: 1024px) {
+			width: 250px;
+			top: -100px;
+		}
 	}
 
 	&-title {
@@ -79,6 +103,9 @@
 		text-transform: uppercase;
 		color: #ffffff;
 		margin-bottom: 10px;
+		@media (min-width: 1024px) {
+			font-size: 24px;
+		}
 	}
 
 	&-dots {
@@ -96,6 +123,10 @@
 		font-weight: 400;
 		@media (min-width: 768px) {
 			font-size: 12px;
+		}
+		@media (min-width: 1024px) {
+			font-size: 14px;
+			line-height: 1.7;
 		}
 	}
 
@@ -121,12 +152,12 @@
 		}
 	}
 	&--pink &--btn i {
-		color: #ff6b8e;
+		color: $color-text-red;
 	}
 	&--beige &--btn i {
-		color: #d6934d;
+		color: $color-text-red;
 	}
 	&--green &--btn i {
-		color: #84a15b;
+		color: $color-text-red;
 	}
 }
