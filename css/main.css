@@ -568,11 +568,15 @@ body {
 }
 .reviews-paragraph {
   width: 280px;
+  height: 308px;
+  display: block;
+  background-color: #fafafa;
   background-image: url("../images/linesBackground.webp");
   background-repeat: no-repeat;
   background-position: center;
   padding: 80px 50px 50px 50px;
   margin-block: 40px;
+  font-weight: 600;
 }
 .reviews--container {
   display: flex;
@@ -591,6 +595,16 @@ body {
 @media (min-width: 768px) {
   .reviews-paragraph {
     width: 620px;
+    height: 164px;
+    padding: 50px 58px;
+    margin-block: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .reviews-paragraph {
+    width: 926px;
+    height: 138px;
+    margin-block: 15px;
   }
 }
 .howmade {
@@ -811,4 +825,15 @@ body {
   width: 100%;
   position: relative;
   bottom: 200px;
+}
+
+@media (min-width: 768px) {
+  .gallery-photo {
+    bottom: 270px;
+  }
+}
+@media (min-width: 1024px) {
+  .gallery-photo {
+    bottom: 310px;
+  }
 }
