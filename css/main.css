@@ -775,6 +775,10 @@ body {
     display: flex;
     flex-direction: row;
     gap: 74px;
+    background-image: url(/image/spilled-milk.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
   }
   .howmade .cow-info .cow-img {
     width: 516px;
