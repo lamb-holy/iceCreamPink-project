@@ -1,0 +1,51 @@
+.footer {
+    background-color: $color-pink-bg;
+    height: 375px;
+    padding: 10px;
+
+    &-left {
+        width: 234px;
+    }
+
+    &-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    &-socials {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        font-size: 30px;
+        color: $color-pink-socials;
+    }
+
+    &--text {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 186%;
+        letter-spacing: 0%;
+        text-align: right;
+
+        span {
+            color: $color-text-red;
+        }
+    }
+
+    &-copy {
+        display: flex;
+        justify-self: center;
+        width: 150px;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 152%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: $color-light-text;
+    }
+}

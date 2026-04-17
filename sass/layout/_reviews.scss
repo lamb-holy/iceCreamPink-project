@@ -5,6 +5,7 @@
     align-items: center;
     gap: 45px;
     padding-top: 154px;
+    padding-bottom: 180px;
     text-align: center;
 
     &-photo{
@@ -33,12 +34,21 @@
 
     .bi-three-dots{
         color: $color-text-red;
+    }
 
+    .reviews-dots {
+        display: flex;
+        gap: 15px;
     }
 
     .bi-circle-fill{
         font-size: 10px;
         color: #D9D9D9;
+        transition: transform 0.3s ease, color 0.3s ease;
+
+        &:hover {
+            color: $color-text-red;
+        }
     }
 }
 

@@ -1,5 +1,126 @@
-.locations--container {
-    height: 1700px;
+.locations {
+    height: 1470px;
     width: 100%;
-    background-color: red;
+    background-color: $color-pink-bg;
+    font-family: "DM Sans", sans-serif;
+
+    &--container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .btn {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 22px;
+            padding: 12px 20px;
+        }
+
+        .location--btn-red {
+            background-color: $color-text-red;
+            color: $color-text-white;
+        }
+
+        .location--btn-white {
+            background-color: $color-text-white;
+            color: $color-text-red;
+        }
+
+    }
+
+    &-list {
+        margin-top: -90px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+
+        @media (min-width: 1024px) {
+            gap: 32px;
+        }
+
+        .location-card {
+            width: 220px;
+            height: 427px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 40px 20px 20px 20px;
+            background-color: $color-text-white;
+            border-radius: 24px;
+            box-shadow: 0 2px 20px #ffb8ca36;
+
+            .card-type {
+                padding: 2px 25px;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 100%;
+                letter-spacing: 4%;
+                text-align: center;
+                vertical-align: middle;
+                background-color: $color-beige;
+                color: white;
+                border-radius: 4px;
+            }
+
+            .truck--type {
+                background-color: $color-green;
+            }
+
+            .card-title {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 186%;
+                letter-spacing: 4%;
+                color: rgba(0, 0, 0, 1);
+            }
+
+            .card--text {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: 0%;
+                color: rgba(144, 126, 130, 1);
+            }
+
+            hr {
+                width: 100%;
+                border: 1px solid rgba(225, 225, 225, 1);
+                margin-bottom: 30px;
+            }
+
+            .schedule {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 80%;
+                letter-spacing: 0%;
+                color: rgba(0, 0, 0, 1);
+            }
+
+            .hours {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 90%;
+                letter-spacing: 0%;
+                color: $color-pink;
+                margin: -8px 0 20px 0;
+            }
+        }
+    }
+
+
 }
