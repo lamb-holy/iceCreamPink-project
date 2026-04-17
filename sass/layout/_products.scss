@@ -186,7 +186,7 @@
     position: relative;
     width: 90%;
     max-width: 500px;
-    background-color: $main-pink;
+    background-color: $color-pink;
     padding: 40px 20px;
     border-radius: 24px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -199,7 +199,7 @@
         background: transparent;
         border: none;
         cursor: pointer;
-        color: $accent-red;
+        color: $color-text-red;
         font-size: 20px;
         
         &:hover {
@@ -209,7 +209,7 @@
 
     &-title {
         font-family: 'Titan One', cursive;
-        color: $white;
+        color: #fff;
         font-size: 22px;
         text-align: center;
         margin-bottom: 24px;
@@ -240,7 +240,7 @@
     }
 
     &-ingredients-list {
-        color: $white;
+        color: #fff;
         list-style: disc;
         font-family: 'DM Sans', sans-serif;
         font-size: 14px;
@@ -248,7 +248,7 @@
     }
 
     &-text {
-        color: $white;
+        color: #fff;
         font-family: 'DM Sans', sans-serif;
         font-size: 14px;
         line-height: 1.6;
