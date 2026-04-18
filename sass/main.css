@@ -12,6 +12,11 @@
     padding: 10px 0;
   }
 }
+@media (min-width: 1024px) {
+  .header {
+    padding: 20px 0;
+  }
+}
 .header .header-logo {
   max-width: 100%;
 }
@@ -20,8 +25,36 @@
   justify-content: space-between;
   align-items: center;
 }
+.header .header-holder {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
 .header .header-list {
   display: none;
+}
+@media (min-width: 1024px) {
+  .header .header-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    margin-top: 10px;
+  }
+  .header .header-list .header-link {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  .header .header-list .header-link:hover {
+    color: #d41443;
+  }
 }
 .header .header--btn {
   display: none;
@@ -50,9 +83,14 @@
   flex-direction: row;
   gap: 20px;
 }
-.header .bi.bi-list {
+.header .bi-list {
   color: #d41443;
   font-size: 25px;
+}
+@media (min-width: 1024px) {
+  .header .bi-list {
+    display: none;
+  }
 }
 
 body {
@@ -78,6 +116,13 @@ body {
     background: radial-gradient(circle at 60% 45%, rgb(255, 165, 186) 30%, rgb(255, 184, 202) 15%);
     height: 399px;
     padding: 80px 20px 0 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero {
+    background: radial-gradient(circle at 60% 50%, rgb(255, 165, 186) 40%, rgb(255, 184, 202) 15%);
+    height: 665px;
+    padding: 100px 20px 0 20px;
   }
 }
 .hero .hero--container {
@@ -110,17 +155,31 @@ body {
     left: 45%;
   }
 }
+@media (min-width: 1024px) {
+  .hero .hero--container .icecream-img {
+    width: 236px;
+    top: 2%;
+    left: 40%;
+  }
+}
 .hero .hero--container .hero-left {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  justify-content: space-between;
 }
 .hero .hero--container .title-holder {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.hero .hero--container .title-holder .title {
+@media (min-width: 1024px) {
+  .hero .hero--container .title-holder {
+    margin-top: 50px;
+    margin-left: 50px;
+    gap: 15px;
+  }
+}
+.hero .hero--container .title-holder .hero--title {
   width: 218px;
   font-family: "Titan One", sans-serif;
   font-weight: 400;
@@ -130,20 +189,31 @@ body {
   color: white;
 }
 @media (min-width: 768px) {
-  .hero .hero--container .title-holder .title {
+  .hero .hero--container .title-holder .hero--title {
     font-size: 22px;
     width: 162px;
   }
 }
-.hero .hero--container .title-holder .title span {
+@media (min-width: 1024px) {
+  .hero .hero--container .title-holder .hero--title {
+    font-size: 38px;
+    width: 277px;
+  }
+}
+.hero .hero--container .title-holder .hero--title span {
   font-size: 48px;
   line-height: 96%;
   letter-spacing: 0%;
   color: #d41443;
 }
 @media (min-width: 768px) {
-  .hero .hero--container .title-holder .title span {
+  .hero .hero--container .title-holder .hero--title span {
     font-size: 34px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero .hero--container .title-holder .hero--title span {
+    font-size: 58px;
   }
 }
 .hero .hero--container .btn {
@@ -159,6 +229,12 @@ body {
   padding: 8px 15px;
   border-radius: 20px;
 }
+@media (min-width: 1024px) {
+  .hero .hero--container .btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
 .hero .hero--container .pink--btn {
   background-color: #d41443;
   color: #ffffff;
@@ -171,11 +247,19 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    margin-bottom: 30px;
   }
   .hero .milk-holder .milk {
     width: 124px;
-    height: 126px;
+    height: auto;
   }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .hero .milk-holder .milk {
+    width: 188px;
+  }
+}
+@media (min-width: 768px) {
   .hero .milk-holder .hero-text {
     font-family: "DM Sans", sans-serif;
     font-weight: 300;
@@ -185,13 +269,32 @@ body {
     color: #ffffff;
     margin-bottom: 5px;
   }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .hero .milk-holder .hero-text {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
   .hero .milk-holder .milk-right-side {
     width: 114px;
   }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .hero .milk-holder .milk-right-side {
+    width: 200px;
+  }
+}
+@media (min-width: 768px) {
   .hero .milk-holder .milk--btn {
     font-size: 10px;
     padding: 5px;
     border-radius: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .hero .milk-holder {
+    margin-bottom: 50px;
   }
 }
 .hero .hero-right {
@@ -205,8 +308,15 @@ body {
   }
   .hero .hero-right .tasty-woman {
     width: 168px;
-    height: 133px;
+    height: auto;
   }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .hero .hero-right .tasty-woman {
+    width: 293px;
+  }
+}
+@media (min-width: 768px) {
   .hero .hero-right .number-item {
     position: relative;
     font-family: "Titan One", sans-serif;
@@ -218,6 +328,13 @@ body {
     color: #d41443;
     z-index: 999;
   }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .hero .hero-right .number-item {
+    font-size: 46px;
+  }
+}
+@media (min-width: 768px) {
   .hero .hero-right .number-item .text {
     font-family: "DM Sans", sans-serif;
     font-weight: 400;
@@ -226,6 +343,13 @@ body {
     letter-spacing: 0%;
     color: #ffffff;
   }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .hero .hero-right .number-item .text {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
   .hero .hero-right .number-item .white-dot {
     position: absolute;
     top: -3px;
@@ -235,6 +359,13 @@ body {
     height: 16px;
     border-radius: 50%;
     z-index: -1;
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .hero .hero-right .number-item .white-dot {
+    width: 30px;
+    height: 30px;
+    top: -6px;
   }
 }
 
@@ -423,45 +554,95 @@ body {
   color: #d41443;
 }
 
-.reviews {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 45px;
-  padding-top: 154px;
-  text-align: center;
-}
-.reviews-photo {
-  width: 85px;
-}
-.reviews-paragraph {
-  width: 280px;
-  background-image: url("../images/linesBackground.webp");
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 80px 50px 50px 50px;
-  margin-block: 40px;
-}
-.reviews--container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.reviews .bi-three-dots {
-  color: #d41443;
-}
-.reviews .bi-circle-fill {
-  font-size: 10px;
-  color: #D9D9D9;
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
 }
 
-@media (min-width: 768px) {
-  .reviews-paragraph {
-    width: 620px;
-  }
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 500px;
+  min-height: 200px;
+  background-color: #ffb8ca;
+  padding: 40px 20px;
+  border-radius: 24px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+.modal-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #d41443;
+  font-size: 20px;
+}
+.modal-close-btn:hover {
+  transform: scale(1.1);
+}
+.modal-title {
+  font-family: "Titan One", cursive;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+.modal-top-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.modal-img-circle {
+  width: 130px;
+  height: 130px;
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+.modal-img-circle img {
+  width: 140px;
+  transform: translateY(-10px);
+}
+.modal-ingredients-list {
+  color: #fff;
+  list-style: disc;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.modal-text {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
 .howmade {
   display: flex;
   flex-direction: column;
@@ -613,8 +794,305 @@ body {
     font-size: 14px;
   }
 }
+@media (min-width: 1024px) {
+  .howmade {
+    width: 100%;
+  }
+  .howmade .title-holder {
+    margin-top: 125px;
+  }
+  .howmade .title-holder .how-made--subtitle {
+    font-size: 30px;
+  }
+  .howmade .title-holder .how-made--title {
+    font-size: 58px;
+  }
+  .howmade .cow-info {
+    display: flex;
+    flex-direction: row;
+    gap: 74px;
+    background-image: url(/image/spilled-milk.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+  .howmade .cow-info .cow-img {
+    width: 516px;
+    height: 516px;
+    margin-top: 55px;
+  }
+  .howmade .cow-info .text-holder {
+    margin-top: 106px;
+  }
+  .howmade .cow-info .text-holder .text--bold {
+    font-size: 16px;
+  }
+  .howmade .cow-info .text-holder button {
+    width: 176px;
+    height: 44px;
+    margin-top: 45px;
+    margin-bottom: 146px;
+  }
+  .howmade .numbers-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+  }
+  .howmade .numbers-holder .number {
+    margin-bottom: 310px;
+  }
+  .howmade .numbers-holder .number .udder {
+    width: 33px;
+    height: 50px;
+  }
+  .howmade .numbers-holder .number .apples {
+    width: 50px;
+    height: 50px;
+  }
+  .howmade .numbers-holder .number .heart {
+    width: 44px;
+    height: 50px;
+  }
+  .howmade .numbers-holder .number .title {
+    font-size: 58px;
+  }
+  .howmade .numbers-holder .number .text--bold {
+    font-size: 16px;
+  }
+}
 .gallery-photo {
   width: 100%;
   position: relative;
   bottom: 200px;
 }
+
+@media (min-width: 768px) {
+  .gallery-photo {
+    bottom: 270px;
+  }
+}
+@media (min-width: 1024px) {
+  .gallery-photo {
+    bottom: 310px;
+  }
+}
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  padding-top: 154px;
+  padding-bottom: 180px;
+  text-align: center;
+}
+.reviews-photo {
+  width: 85px;
+}
+.reviews-paragraph {
+  width: 280px;
+  height: 308px;
+  display: block;
+  background-color: #fafafa;
+  background-image: url("../images/linesBackground.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 80px 50px 50px 50px;
+  margin-block: 40px;
+  font-weight: 600;
+}
+.reviews--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reviews .bi-three-dots {
+  color: #d41443;
+}
+.reviews .reviews-dots {
+  display: flex;
+  gap: 15px;
+}
+.reviews .bi-circle-fill {
+  font-size: 10px;
+  color: #D9D9D9;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.reviews .bi-circle-fill:hover {
+  color: #d41443;
+}
+
+@media (min-width: 768px) {
+  .reviews-paragraph {
+    width: 620px;
+    height: 164px;
+    padding: 50px 58px;
+    margin-block: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .reviews-paragraph {
+    width: 926px;
+    height: 138px;
+    margin-block: 15px;
+  }
+}
+.locations {
+  height: 1470px;
+  width: 100%;
+  background-color: #FFF5F6;
+  font-family: "DM Sans", sans-serif;
+}
+.locations--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.locations-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.locations-buttons .btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 22px;
+  padding: 12px 20px;
+}
+.locations-buttons .location--btn-red {
+  background-color: #d41443;
+  color: #ffffff;
+}
+.locations-buttons .location--btn-white {
+  background-color: #ffffff;
+  color: #d41443;
+}
+.locations-list {
+  margin-top: -90px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .locations-list {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .locations-list {
+    gap: 32px;
+  }
+}
+.locations-list .location-card {
+  width: 220px;
+  height: 427px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 20px 20px 20px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 2px 20px rgba(255, 184, 202, 0.2117647059);
+}
+.locations-list .location-card .card-type {
+  padding: 2px 25px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #f0d1a5;
+  color: white;
+  border-radius: 4px;
+}
+.locations-list .location-card .truck--type {
+  background-color: #c2e297;
+}
+.locations-list .location-card .card-title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 4%;
+  color: rgb(0, 0, 0);
+}
+.locations-list .location-card .card--text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  color: rgb(144, 126, 130);
+}
+.locations-list .location-card hr {
+  width: 100%;
+  border: 1px solid rgb(225, 225, 225);
+  margin-bottom: 30px;
+}
+.locations-list .location-card .schedule {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 80%;
+  letter-spacing: 0%;
+  color: rgb(0, 0, 0);
+}
+.locations-list .location-card .hours {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 90%;
+  letter-spacing: 0%;
+  color: #ffb8ca;
+  margin: -8px 0 20px 0;
+}
+
+.footer {
+  background-color: #FFF5F6;
+  height: 375px;
+  padding: 10px;
+}
+.footer-left {
+  width: 234px;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+  margin-top: 30px;
+}
+.footer-socials {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  font-size: 30px;
+  color: #ffa4b5;
+}
+.footer--text {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0%;
+  text-align: right;
+}
+.footer--text span {
+  color: #d41443;
+}
+.footer-copy {
+  display: flex;
+  justify-self: center;
+  width: 150px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #907E82;
+}/*# sourceMappingURL=main.css.map */
