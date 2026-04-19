@@ -11,10 +11,79 @@
 }
 
 .modal-content {
-    background: linear-gradient(135deg, #ffe5e5, rgb(255, 227, 227));
+    background: linear-gradient(135deg, #fff4f4, rgb(252, 232, 232));
     position: relative;
-    max-width: 500px;
-    height: 300px;
+    max-width: 680px;
+    height: 440px;
+    border-radius: 50px;
+    padding: 30px 50px;
+
+    .modalka {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .btn {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 22px;
+            padding: 12px 20px;
+        }
+
+        &--btn-red {
+            background-color: $color-text-red;
+            color: $color-text-white;
+            margin-bottom: 20px;
+            margin-top: 70px;
+        }
+
+        &--btn-white {
+            background-color: $color-text-white;
+            color: $color-text-red;
+        }
+
+        &-left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &-right {
+            height: 120%;
+        }
+
+        &--title {
+            font-family: "Titan One", cursive;
+            font-weight: 400;
+            font-size: 58px;
+            line-height: 100%;
+            letter-spacing: 4%;
+            text-align: right;
+            color: $color-text-red;
+        }
+
+        &--text {
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 16px;
+            line-height: 176%;
+            letter-spacing: 4%;
+            color: rgba(0, 0, 0, 1);
+            margin-top: 35px;
+        }
+    }
+
+    .path-img {
+        width: 90%;
+        height: 85%;
+    }
 }
 
 #closeModal-loc {
