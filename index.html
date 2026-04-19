@@ -199,8 +199,8 @@
 						<p class="text text--light">
 							Aliquam erat volutpat. Aenean accumsan.
 						</p>
-						<button>
-							<a href="#" class="btn read-more-link">Read more <i class="bi bi-chevron-right"></i></a>
+						<button href="./steps.html">
+							<a href="./steps.html" class="btn read-more-link">Read more <i class="bi bi-chevron-right"></i></a>
 						</button>
 					</div>
 				</div>
@@ -243,7 +243,8 @@
 				<i class="bi bi-three-dots"></i>
 				<p class="reviews-name">Emily, Los Angeles</p>
 				<div class="reviews-dots">
-					<svg class="home-icon" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<svg class="home-icon" width="13" height="12" viewBox="0 0 13 12" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M12.2399 5.85484C12.4646 5.60772 12.4429 5.22897 12.1915 5.00908L6.65189 0.161935C6.40045 -0.0579491 5.99732 -0.0533429 5.75118 0.172319L0.19278 5.26751C-0.0533671 5.49318 -0.0654482 5.87145 0.166032 6.11206L0.305389 6.25719C0.536587 6.49781 0.910293 6.52649 1.13955 6.32107L1.55495 5.94907V11.3953C1.55495 11.7295 1.82571 12 2.15962 12H4.32629C4.6602 12 4.93096 11.7295 4.93096 11.3953V7.58515H7.69458V11.3953C7.68977 11.7292 7.92869 11.9998 8.26259 11.9998H10.5587C10.8926 11.9998 11.1634 11.7292 11.1634 11.3951V6.02575C11.1634 6.02575 11.2781 6.12628 11.4197 6.25069C11.561 6.37485 11.8577 6.2753 12.0824 6.02794L12.2399 5.85484Z"
 							fill="rgba(211, 19, 66, 1)" />
@@ -309,8 +310,34 @@
 					</div>
 				</div>
 				<div class="locations-buttons">
-					<button class="btn location--btn-red">Our Locations <i class="bi bi-chevron-right"></i></button>
+					<button id="openModal-loc" class="btn location--btn-red">Our Locations <i class="bi bi-chevron-right"></i></button>
 					<button class="btn location--btn-white">Franchise <i class="bi bi-chevron-right"></i></button>
+				</div>
+				<div id="modal-loc" class="modal-loc">
+					<div class="modal-content">
+						<span id="closeModal-loc">
+							<svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_81653_782)">
+									<line x1="1.5" y1="-1.5" x2="28.5" y2="-1.5"
+										transform="matrix(-0.707107 0.707107 0.707107 0.707107 23.2132 4)"
+										stroke="#D41443" stroke-width="3" stroke-linecap="round" />
+									<line x1="4.12132" y1="4" x2="23.2132" y2="23.0919" stroke="#D41443"
+										stroke-width="3" stroke-linecap="round" />
+								</g>
+								<defs>
+									<clipPath id="clip0_81653_782">
+										<rect width="25" height="25" fill="white" />
+									</clipPath>								</defs>
+							</svg>
+						</span>
+						<div>
+							<h2 class="title modal-loc--title">visit us!</h2>
+							<p>We are always there! Visit our nearest cafe and try our new products.</p>
+							<button class="btn modal-loc--btn-red">Get Directions</button>
+							<button class="btn modal-loc--btn-white">Contact Us</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
