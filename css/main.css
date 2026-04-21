@@ -1006,14 +1006,55 @@ body.no-scroll {
   color: #d41443;
 }
 
+@media (min-width: 768px) {
+  .hidenText {
+    display: block;
+  }
+  .readMore {
+    display: none;
+  }
+}
 .lastStep {
   padding-block: 134px;
   text-align: center;
   display: flex;
-  flex-direction: column;
   padding-inline: 23px;
 }
+.lastStep--title {
+  color: #d41443;
+  font-size: 34px;
+  font-family: "Titan One";
+  margin-bottom: 38px;
+}
+.lastStep--paragraph p {
+  font-family: "DM Sans";
+  font-size: 16px;
+}
+.lastStep--text {
+  font-family: "DM Sans";
+  font-size: 16px;
+}
+.lastStep--text--grey {
+  color: #907E82;
+}
+.lastStep--icecream {
+  display: none;
+}
 
+@media (min-width: 768px) {
+  .lastStep {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+  }
+  .lastStep--paragraph {
+    width: 300px;
+  }
+  .lastStep--icecream {
+    display: block;
+    width: 257px;
+  }
+}
 .modal-loc {
   display: none;
   position: fixed;

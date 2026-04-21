@@ -46,3 +46,13 @@
         color: $color-text-red;
     }
 }
+
+@media (min-width: 768px) {
+    .hidenText{
+        display: block;
+    }
+
+    .readMore{
+        display: none;
+    }
+}
