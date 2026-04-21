@@ -1,0 +1,48 @@
+.secondStep {
+    padding-block: 134px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 23px;
+    background-color: $color-pink-bg;
+
+    &--img {
+        width: 260px;
+    }
+
+    &--title {
+        color: $color-text-red;
+        font-size: 34px;
+        font-family: "Titan One";
+        margin-bottom: 38px;
+    }
+
+    &--paragraph {
+        p {
+            font-family: "DM Sans";
+            font-size: 16px;
+        }
+    }
+
+    &--text {
+        font-family: "DM Sans";
+        font-size: 16px;
+
+    }
+
+    &--text--grey {
+        color: #907E82;
+    }
+}
+
+.hidenText {
+    display: none;
+}
+
+.readMore {
+    color: $color-text-red;
+
+    &:visited {
+        color: $color-text-red;
+    }
+}
