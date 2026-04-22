@@ -4,11 +4,17 @@
     background-color: $color-pink-bg;
     font-family: "DM Sans", sans-serif;
 
+    @media (min-width: 768px) {
+        height: 700px;
+    }
+
     &--container {
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+        gap: 80px;
     }
 
     &-buttons {
@@ -16,8 +22,13 @@
         flex-direction: column;
         gap: 10px;
 
+        @media (min-width: 768px) {
+            flex-direction: row;
+            gap: 15px;
+        }
+
         .btn {
-            font-weight: 700;
+            font-weight: 600;
             font-size: 16px;
             line-height: 100%;
             letter-spacing: 0%;
@@ -25,6 +36,10 @@
             vertical-align: middle;
             border-radius: 22px;
             padding: 12px 20px;
+
+            @media (min-width: 768px) {
+                padding: 12px 30px;
+            }
         }
 
         .location--btn-red {
@@ -32,8 +47,17 @@
             color: $color-text-white;
         }
 
+        .location--btn-red:hover {
+            color: #ffd2d2;
+        }
+
         .location--btn-white {
             background-color: $color-text-white;
+            color: $color-text-red;
+        }
+
+        .location--btn-white:hover {
+            background-color: $color-btn-hover;
             color: $color-text-red;
         }
 
@@ -64,6 +88,26 @@
             border-radius: 24px;
             box-shadow: 0 2px 20px #ffb8ca36;
 
+            @media (min-width: 768px) {
+                height: 544px;
+                padding: 40px 26px 26px 26px;
+                gap: 8px;
+
+                .card-title, .card--text, .schedule, .hours {
+                    font-size: 14px;
+                }
+            }
+
+            @media (min-width: 1024px) {
+                width: 290px;
+                height: 572px;
+            }
+
+            @media (min-width: 1200px) {
+                width: 330px;
+                height: 572px;
+            }
+
             .card-type {
                 padding: 2px 25px;
                 font-weight: 500;
@@ -75,6 +119,11 @@
                 background-color: $color-beige;
                 color: white;
                 border-radius: 4px;
+
+                @media (min-width: 768px) {
+                    font-size: 16px;
+                    padding: 5px 15px;
+                }
             }
 
             .truck--type {
@@ -95,6 +144,16 @@
                 line-height: 18px;
                 letter-spacing: 0%;
                 color: rgba(144, 126, 130, 1);
+
+                @media (min-width: 768px) {
+                    line-height: 183%;
+                }
+
+                &-lorem {
+                    @media (min-width: 768px) {
+                        line-height: 166%;
+                    }
+                }
             }
 
             hr {
@@ -118,6 +177,18 @@
                 letter-spacing: 0%;
                 color: $color-pink;
                 margin: -8px 0 20px 0;
+            }
+
+            @media (min-width: 768px) {
+                .card-title, .card--text, .schedule, .hours {
+                    font-size: 14px;
+                }
+            }
+
+            @media (min-width: 1024px) {
+                .card-title, .card--text, .schedule, .hours {
+                    font-size: 16px;
+                }
             }
         }
     }

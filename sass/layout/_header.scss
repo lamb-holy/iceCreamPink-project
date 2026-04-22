@@ -80,6 +80,11 @@
                 font-size: 12px;
             }
         }
+
+        &:hover {
+            background-color: $color-btn-hover;
+            color: $color-text-red;
+        }
     }
 
     .header-nav {
