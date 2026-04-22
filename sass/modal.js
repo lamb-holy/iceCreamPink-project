@@ -18,20 +18,16 @@
 
 // location modal
 
-const modal = document.getElementById("modal-loc");
-const openBtn = document.getElementById("openModal-loc");
-const closeBtn = document.getElementById("closeModal-loc");
+const modal = document.getElementById('myModal--loc')
+const btn = document.getElementById('openModal--loc')
+const span = document.querySelector('.close-btn--loc')
 
-openBtn.onclick = () => {
-  modal.style.display = "flex";
-};
+btn.onclick = () => (modal.style.display = 'block')
 
-closeBtn.onclick = () => {
-  modal.style.display = "none";
-};
+span.onclick = () => (modal.style.display = 'none')
 
-window.onclick = (e) => {
-  if (e.target === modal) {
-    modal.style.display = "none";
+window.onclick = event => {
+  if (event.target === modal) {
+    modal.style.display = 'none'
   }
-};
+}
