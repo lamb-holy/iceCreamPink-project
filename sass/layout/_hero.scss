@@ -139,11 +139,21 @@ body {
                 font-size: 14px;
                 padding: 10px 20px;
             }
+
+            &:hover {
+                background-color: $color-btn-hover;
+                color: $color-text-red;
+            }
         }
 
         .pink--btn {
             background-color: $color-text-red;
             color: $color-text-white;
+
+            &:hover {
+                background-color: $color-text-red;
+                color: #ffd2d2;
+            }
         }
     }
     

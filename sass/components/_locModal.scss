@@ -25,29 +25,6 @@
         flex-direction: row;
         justify-content: space-between;
 
-        .btn {
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 100%;
-            letter-spacing: 0%;
-            text-align: center;
-            vertical-align: middle;
-            border-radius: 22px;
-            padding: 12px 20px;
-        }
-
-        &--btn-red {
-            background-color: $color-text-red;
-            color: $color-text-white;
-            margin-bottom: 20px;
-            margin-top: 70px;
-        }
-
-        &--btn-white {
-            background-color: $color-text-white;
-            color: $color-text-red;
-        }
-
         &-left {
             display: flex;
             flex-direction: column;
