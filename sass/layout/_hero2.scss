@@ -1,0 +1,102 @@
+.hero2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(/image/hero-cow-phone.webp);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    background-color: $color-pink;
+    padding-top: 75px;
+    padding-bottom: 27px;
+    text-align: center;
+
+    & .text-holder {
+        & .title {
+            color: $color-text-red;
+            font-size: 34px;
+            font-family: "Titan One";
+            margin-bottom: 22px;
+        }
+
+        & .text--light {
+            color: $color-dots;
+            font-size: 16px;
+            font-family: "DM Sans";
+            font-style: bold;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        & .hidden-text {
+                display: none;
+            }
+
+        & button {
+            background-color: $color-text-red;
+            width: 256px;
+            height: 44px;
+            border: none;
+            border-radius: 22px;
+            text-align: center;
+            margin-top: 329px;
+            
+            & a {
+                color: $color-dots;
+                font-family: "DM Sans";
+                font-size: 16px;
+                margin-left: 30px;
+            }
+
+            & i {
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .hero2 {
+        background-image: url(/image/hero-cow-tablet.webp);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: contain;
+        padding-top: 142px;
+        padding-bottom: 67px;
+        text-align: start;
+
+        & .text-holder {
+            & .title {
+                font-size: 48px;
+                margin-bottom: 28px;
+            }
+
+            & .hidden-text {
+                display: flex;
+                margin-bottom: 55px;
+            }
+
+            & button {
+                background-color: $color-text-red;
+                width: 256px;
+                height: 44px;
+                border: none;
+                border-radius: 22px;
+                text-align: center;
+                margin: none;
+
+                & a {
+                    color: $color-dots;
+                    font-family: "DM Sans";
+                    font-size: 16px;
+                    margin-left: 30px;
+                }
+
+                & i {
+                    margin-left: 30px;
+                }
+            }
+        }   
+    }
+}
