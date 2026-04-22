@@ -801,7 +801,7 @@ body.no-scroll {
 }
 @media (min-width: 1024px) {
   .gallery-photo {
-    bottom: 310px;
+    bottom: 380px;
   }
 }
 .reviews {
@@ -821,10 +821,7 @@ body.no-scroll {
   width: 280px;
   height: 308px;
   display: block;
-  background-color: #fafafa;
-  background-image: url("../images/linesBackground.webp");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("../images/bg-reviews.webp");
   padding: 80px 50px 50px 50px;
   margin-block: 40px;
   font-weight: 600;
@@ -1079,6 +1076,11 @@ body.no-scroll {
 .secondStep--text--grey {
   color: #907E82;
 }
+.secondStep--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .hidenText {
   display: none;
@@ -1092,11 +1094,39 @@ body.no-scroll {
 }
 
 @media (min-width: 768px) {
+  .secondStep--title {
+    font-size: 48px;
+  }
   .hidenText {
     display: block;
   }
   .readMore {
     display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .secondStep {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+  }
+  .secondStep--paragraph {
+    order: 2;
+    width: 480px;
+  }
+  .secondStep--title {
+    font-size: 48px;
+  }
+  .secondStep--img {
+    order: 1;
+    width: 480px;
+  }
+  .secondStep--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+    align-items: center;
   }
 }
 .lastStep {
@@ -1122,6 +1152,12 @@ body.no-scroll {
 .lastStep--text--grey {
   color: #907E82;
 }
+.lastStep--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .lastStep--icecream {
   display: none;
 }
@@ -1131,6 +1167,7 @@ body.no-scroll {
     display: flex;
     flex-direction: row;
     text-align: start;
+    gap: 60px;
   }
   .lastStep--paragraph {
     width: 300px;
@@ -1138,6 +1175,23 @@ body.no-scroll {
   .lastStep--icecream {
     display: block;
     width: 257px;
+  }
+  .lastStep--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .lastStep--title {
+    font-size: 48px;
+  }
+}
+@media (min-width: 1024px) {
+  .lastStep--paragraph {
+    width: 650px;
+  }
+  .lastStep--title {
+    margin-bottom: 95px;
   }
 }
 .modal--loc {
