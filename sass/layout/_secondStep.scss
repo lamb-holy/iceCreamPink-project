@@ -1,4 +1,5 @@
 .secondStep {
+
     padding-block: 134px;
     text-align: center;
     display: flex;
@@ -33,6 +34,12 @@
     &--text--grey {
         color: #907E82;
     }
+
+    &--container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .hidenText {
@@ -48,11 +55,48 @@
 }
 
 @media (min-width: 768px) {
+
+    .secondStep{
+        &--title{
+            font-size: 48px;
+        }
+    }
+
     .hidenText{
         display: block;
     }
 
     .readMore{
         display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .secondStep{
+        display: flex;
+        flex-direction: row;
+        text-align: start;
+
+        &--paragraph{
+            order: 2;
+            width: 480px;
+        }
+
+        &--title{
+            font-size: 48px;
+        }
+
+        &--img{
+            order: 1;
+            width: 480px;
+        }
+
+        &--container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 80px;
+            align-items: center;
+        }
     }
 }
