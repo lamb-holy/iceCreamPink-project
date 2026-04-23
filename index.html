@@ -46,11 +46,35 @@
 				</ul>
 			</nav>
 			<div class="header-holder">
-				<i class="bi bi-list"></i>
+				<!-- <i class="bi bi-list"></i> -->
 				<button class="btn header--btn">
 					Buy now <i class="bi bi-chevron-right"></i>
 				</button>
 			</div>
+
+
+
+			<button class="hamburger" id="triggerBtn" aria-label="Відкрити меню">
+				<i class="bi bi-list"></i>
+			</button>
+			<div class="menu-overlay" id="overlay"></div>
+			<div class="drawer" id="drawer" role="dialog" aria-label="Навігаційне меню">
+				<button class="drawer-close" id="closeBtn" aria-label="Закрити меню">
+					<i class="bi bi-x-lg"></i>
+				</button>
+				<button class="drawer-cta">
+					Buy now <i class="bi bi-chevron-right"></i>
+				</button>
+				<nav class="drawer-nav">
+					<a href="#">Home</a>
+					<a href="#">About us</a>
+					<a href="#">How it's made?</a>
+					<a href="#">Our products</a>
+					<a href="#">Contact</a>
+				</nav>
+			</div>
+
+
 		</div>
 	</header>
 	<main>
@@ -144,12 +168,12 @@
 						<div id="myModal" class="modal-qq">
 							<div class="modal-content">
 								<span class="close-btn">&times;</span>
-						
+
 								<div class="modal-inner">
 									<div class="modal-left">
 										<img src="./sass/images/icecreamsec2.webp" alt="Ice Cream" />
 									</div>
-						
+
 									<div class="modal-right">
 										<h3>INGREDIENTS</h3>
 										<ul>
@@ -159,17 +183,20 @@
 											<li>strawberry</li>
 											<li>milk</li>
 										</ul>
-						
+
 										<h3>HOW IT’S MADE?</h3>
 										<p>
-											Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+											Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+											eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+											voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+											clita kasd gubergren, no sea takimata sanctus est
 										</p>
 									</div>
 								</div>
 							</div>
+						</div>
 					</div>
 				</div>
-			</div>
 		</section>
 		<section class="howmade">
 			<div class="container how-made--container">
@@ -318,7 +345,8 @@
 					</div>
 				</div>
 				<div class="locations-buttons">
-					<button id="openModal--loc" class="btn location--btn-red">Our Locations <i class="bi bi-chevron-right"></i></button>
+					<button id="openModal--loc" class="btn location--btn-red">Our Locations <i
+							class="bi bi-chevron-right"></i></button>
 					<button class="btn location--btn-white">Franchise <i class="bi bi-chevron-right"></i></button>
 				</div>
 				<div id="myModal--loc" class="modal--loc">
@@ -382,8 +410,8 @@
 			<p class="footer-copy">© 2019 - IceCream. All Rights Reserved.</p>
 		</div>
 	</footer>
-	<script src="./sass/modal.js"></script>
-	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="./js/modal.js"></script>
 </body>
 
 </html>
