@@ -85,6 +85,27 @@
             background-color: $color-btn-hover;
             color: $color-text-red;
         }
+
+        &-modal {
+            width: 100%;
+            display: block;
+            font-family: "`DM Sans", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            color: $color-text-red;
+            background-color: $color-text-white;
+            margin-top: 20px;
+            padding: 13px;
+            border-radius: 60px;
+
+            &:hover {
+                background-color: $color-btn-hover;
+                color: $color-text-red;
+            }
+        }
     }
 
     .header-nav {

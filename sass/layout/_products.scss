@@ -141,14 +141,14 @@
 		align-items: center;
 		cursor: pointer;
 		padding: 10px;
-		transition: transform 0.8s ease-out;
+		transition: transform 0.2s ease-out;
 		& i {
 			color: #ffb7c5;
 			font-size: 24px;
 		}
 
 		&:hover {
-			transform: translate(5px, -5px) rotate(-45deg);
+			transform: rotate(-45deg);
 		}
 	}
 	&--pink &--btn i {

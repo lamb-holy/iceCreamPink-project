@@ -46,34 +46,34 @@
 				</ul>
 			</nav>
 			<div class="header-holder">
-				<!-- <i class="bi bi-list"></i> -->
+				<button class="listik" data-modal-open-header>
+					<i class="bi bi-list"></i>
+				</button>
 				<button class="btn header--btn">
 					Buy now <i class="bi bi-chevron-right"></i>
 				</button>
 			</div>
 
+			<div class="backdrop-header is-hidden-header" data-modal-header>
+				<div class="modal-header">
+					<div class="modal-header--holder">
+						<button class="btn-close-header" data-modal-close-header>
+							<i class="bi bi-x-lg"></i>
+						</button>
+						<button class="btn header--btn header--btn-modal">
+							Buy now <i class="bi bi-chevron-right"></i>
+						</button>
+						<nav class="drawer-nav">
+							<a class="header-link" href="#">Home</a>
+							<a class="header-link" href="#">About us</a>
+							<a class="header-link" href="#">How it's made?</a>
+							<a class="header-link" href="#">Our products</a>
+							<a class="header-link" href="#">Contact</a>
+						</nav>
+					</div>
 
-
-			<button class="hamburger" id="triggerBtn" aria-label="Відкрити меню">
-				<i class="bi bi-list"></i>
-			</button>
-			<div class="menu-overlay" id="overlay"></div>
-			<div class="drawer" id="drawer" role="dialog" aria-label="Навігаційне меню">
-				<button class="drawer-close" id="closeBtn" aria-label="Закрити меню">
-					<i class="bi bi-x-lg"></i>
-				</button>
-				<button class="drawer-cta">
-					Buy now <i class="bi bi-chevron-right"></i>
-				</button>
-				<nav class="drawer-nav">
-					<a href="#">Home</a>
-					<a href="#">About us</a>
-					<a href="#">How it's made?</a>
-					<a href="#">Our products</a>
-					<a href="#">Contact</a>
-				</nav>
+				</div>
 			</div>
-
 
 		</div>
 	</header>
@@ -165,13 +165,13 @@
 						<button id="openModal" class="product--btn">
 							<i class="bi bi-arrow-right-short"></i>
 						</button>
-				</div>
-				<div class="backdrop-product is-hidden-product" data-modal-product>
-					<div class="modal-product">
-						<button class="btn-close-product" data-modal-close-product>✕</button>
-						<h2>qwe</h2>
 					</div>
-				</div>
+					<div class="backdrop-product is-hidden-product" data-modal-product>
+						<div class="modal-product">
+							<button class="btn-close-product" data-modal-close-product>✕</button>
+							<h2>qwe</h2>
+						</div>
+					</div>
 		</section>
 		<section class="howmade">
 			<div class="container how-made--container">
@@ -320,9 +320,47 @@
 					</div>
 				</div>
 				<div class="locations-buttons">
-					<button id="openModal--loc" class="btn location--btn-red">Our Locations <i
+					<button class="btn location--btn-red" data-modal-open-loc>Our Locations <i
 							class="bi bi-chevron-right"></i></button>
 					<button class="btn location--btn-white">Franchise <i class="bi bi-chevron-right"></i></button>
+				</div>
+				<div class="backdrop-loc is-hidden-loc" data-modal-loc>
+					<div class="modal-loc" style="border-radius: 20px;">
+						<span class="btn-close-loc" data-modal-close-loc>
+							<svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_81653_782)">
+									<line x1="1.5" y1="-1.5" x2="28.5" y2="-1.5"
+										transform="matrix(-0.707107 0.707107 0.707107 0.707107 23.2132 4)"
+										stroke="#D41443" stroke-width="3" stroke-linecap="round" />
+									<line x1="4.12132" y1="4" x2="23.2132" y2="23.0919" stroke="#D41443"
+										stroke-width="3" stroke-linecap="round" />
+								</g>
+								<defs>
+									<clipPath id="clip0_81653_782">
+										<rect width="25" height="25" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</span>
+						<div class="modalka">
+							<div class="modalka-left">
+								<h2 class="title modalka--title">visit us!</h2>
+								<p class="text modalka--text">We are always there! Visit our <br>
+									nearest cafe and try our new <br>
+									products.</p>
+								<div class="modalka-left--buttons">
+									<button class="btn modalka--btn-red">Find nearest locations <i
+											class="bi bi-chevron-right"></i></button>
+									<button class="btn modalka--btn-white">More info <i
+											class="bi bi-chevron-right"></i></button>
+								</div>
+							</div>
+							<div class="modalka-right">
+								<img class="path-img" src="./image/path.webp" alt="path">
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
