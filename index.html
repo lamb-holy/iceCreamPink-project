@@ -136,7 +136,7 @@
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 							labore et.
 						</p>
-						<button id="openModal" class="product--btn">
+						<button class="product--btn" data-modal-open-product>
 							<i class="bi bi-arrow-right-short"></i>
 						</button>
 					</div>
@@ -165,36 +165,11 @@
 						<button id="openModal" class="product--btn">
 							<i class="bi bi-arrow-right-short"></i>
 						</button>
-						<div id="myModal" class="modal-qq">
-							<div class="modal-content">
-								<span class="close-btn">&times;</span>
-
-								<div class="modal-inner">
-									<div class="modal-left">
-										<img src="./sass/images/icecreamsec2.webp" alt="Ice Cream" />
-									</div>
-
-									<div class="modal-right">
-										<h3>INGREDIENTS</h3>
-										<ul>
-											<li>Lorem</li>
-											<li>Ipsum</li>
-											<li>Anet</li>
-											<li>strawberry</li>
-											<li>milk</li>
-										</ul>
-
-										<h3>HOW IT’S MADE?</h3>
-										<p>
-											Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-											eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-											voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-											clita kasd gubergren, no sea takimata sanctus est
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
+				</div>
+				<div class="backdrop-product is-hidden-product" data-modal-product>
+					<div class="modal-product">
+						<button class="btn-close-product" data-modal-close-product>✕</button>
+						<h2>qwe</h2>
 					</div>
 				</div>
 		</section>
@@ -349,42 +324,6 @@
 							class="bi bi-chevron-right"></i></button>
 					<button class="btn location--btn-white">Franchise <i class="bi bi-chevron-right"></i></button>
 				</div>
-				<div id="myModal--loc" class="modal--loc">
-					<div class="modal-content--loc" style="border-radius: 40px;">
-						<span class="close-btn--loc">
-							<svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<g clip-path="url(#clip0_81653_782)">
-									<line x1="1.5" y1="-1.5" x2="28.5" y2="-1.5"
-										transform="matrix(-0.707107 0.707107 0.707107 0.707107 23.2132 4)"
-										stroke="#D41443" stroke-width="3" stroke-linecap="round" />
-									<line x1="4.12132" y1="4" x2="23.2132" y2="23.0919" stroke="#D41443"
-										stroke-width="3" stroke-linecap="round" />
-								</g>
-								<defs>
-									<clipPath id="clip0_81653_782">
-										<rect width="25" height="25" fill="white" />
-									</clipPath>
-								</defs>
-							</svg>
-						</span>
-						<div class="modalka">
-							<div class="modalka-left">
-								<h2 class="title modalka--title">visit us!</h2>
-								<p class="text modalka--text">We are always there! Visit our <br>
-									nearest cafe and try our new <br>
-									products.</p>
-								<button class="btn modalka--btn-red">Find nearest locations <i
-										class="bi bi-chevron-right"></i></button>
-								<button class="btn modalka--btn-white">More info <i
-										class="bi bi-chevron-right"></i></button>
-							</div>
-							<div class="modalka-right">
-								<img class="path-img" src="./image/path.webp" alt="path">
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</section>
 	</main>
@@ -410,7 +349,6 @@
 			<p class="footer-copy">© 2019 - IceCream. All Rights Reserved.</p>
 		</div>
 	</footer>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="./js/modal.js"></script>
 </body>
 
