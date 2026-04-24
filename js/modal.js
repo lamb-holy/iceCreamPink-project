@@ -12,7 +12,7 @@
 
 	function toggleModal() {
 		refs.modal.classList.toggle('is-hidden-header')
-		document.body.classList.toggle('no-scroll')
+		// document.body.classList.toggle('no-scroll')
 	}
 })()
 
@@ -30,7 +30,7 @@
 
 	function toggleModal() {
 		refs.modal.classList.toggle('is-hidden-product')
-		document.body.classList.toggle('no-scroll')
+		// document.body.classList.toggle('no-scroll')
 	}
 })()
 
@@ -46,7 +46,7 @@
 
 	function toggleModal() {
 		refs.modal.classList.toggle('is-hidden-product2')
-		document.body.classList.toggle('no-scroll')
+		// document.body.classList.toggle('no-scroll')
 	}
 })()
 
@@ -62,7 +62,7 @@
 
 	function toggleModal() {
 		refs.modal.classList.toggle('is-hidden-product3')
-		document.body.classList.toggle('no-scroll')
+		// document.body.classList.toggle('no-scroll')
 	}
 })()
 
@@ -80,6 +80,6 @@
 
 	function toggleModal() {
 		refs.modal.classList.toggle('is-hidden-loc')
-		document.body.classList.toggle('no-scroll')
+		// document.body.classList.toggle('no-scroll')
 	}
 })()

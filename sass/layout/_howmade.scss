@@ -1,104 +1,118 @@
 .howmade {
+	width: 100%;
+	height: 1688px;
 	display: flex;
 	flex-direction: column;
 	background-color: $color-pink-bg;
+	padding: 10px 10px 0px 10px;
 
-	& .title-holder {
+	&--container {
+		width: 100%;
+	}
+
+	.title-holder {
 		display: flex;
 		gap: 15px;
 		margin-top: 125px;
 		flex-direction: column;
 		text-align: center;
 
-		& .how-made--subtitle {
+		.how-made--subtitle {
 			color: $color-pink-text;
 			font-size: 18px;
 			font-family: "Titan One";
 		}
 
-		& .how-made--title {
+		.how-made--title {
 			color: $color-text-red;
 			font-size: 34px;
 			font-family: "Titan One";
 		}
 	}
 
-	& .cow-info {
+	.cow-info {
+		padding: 15px;
 
-		& .cow-img {
+		.cow-img {
 			max-width: 100%;
 			height: auto;
 		}
 
-		& .text-holder {
+		.text-holder {
 			font-size: 12px;
 			font-family: "DM Sans";
-			
-			& .text--bold {
+			font-weight: 500;
+			line-height: 162%;
+			letter-spacing: 0%;
+						
+			.text--bold {
 				color: $color-black;
+				margin-bottom: 25px;
 			}
 
-			& .text--light {
+			.text--light {
 				color: $color-light-text;
+				margin-bottom: 10px;
 			}
 
-			& button {
-				background-color: $color-dots;
-				border: none;
+			.read-more-link {
+        		font-family: "DM Sans", sans-serif;
+        		font-weight: 700;
+        		font-size: 14px;
+				background-color: white;
 				border-radius: 22px;
-				width: 176px;
-				height: 44px;
-				display: flex;
-				justify-content: center;
-				margin-bottom: 39px;
+				padding: 10px 40px;
+				color: $color-text-red;
+				margin-bottom: 30px;
 
 				&:hover {
 					background-color: $color-btn-hover;
-				}
-
-				& .read-more-link {
-					color: $color-text-red;
-					text-align: center;
-					font-family: "DM Sans";
-					padding-top: 8px;
-					font-size: 14px;
 				}
 			}
 		}
 	}
 
-	& .numbers-holder {
+	.numbers-holder {
 		display: flex;
 		gap: 38px;
 		flex-direction: column;
 		margin-bottom: 145px;
 
-		& .number {
-			& .udder {
+		.number {
+			width: 230px;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+
+			.udder {
 				width: 33px;
 				height: 50px;
 			}
 
-			& .apples {
+			.apples {
 				width: 50px;
 				height: 50px;
 			}
 
-			& .heart {
+			.heart {
 				width: 44px;
 				height: 50px;
 			}
 
-			& .title {
+			.title {
 				font-size: 36px;
 				color: $color-text-red;
 				font-family: "Titan One";
 			}
 
-			& .text--bold {
+			.text--bold {
 				font-size: 12px;
-				font-family: "DM Sans";
+				font-family: "DM Sans", sans-serif;
 				color: $color-black;
+				font-weight: 700;
+				line-height: 170%;
+				letter-spacing: 2%;
+
 			}
 		}
 	}
@@ -107,80 +121,83 @@
 @media (min-width: 768px) {
 	.howmade {
 		width: 100%;
+		height: 1240px;
 
-		& .title-holder {
+		.title-holder {
 			margin-top: 130px;
 
-			& .how-made--subtitle {
+			.how-made--subtitle {
 				font-size: 26px;
 			}
 
-			& .how-made--title {
+			.how-made--title {
 				font-size: 48px;
 			}
 		}
 
-		& .cow-info {
+		.cow-info {
 			display: flex;
 			flex-direction: row;
 			gap: 17px;
 
-			& .cow-img {
+			.cow-img {
 				width: 340px;
 				height: 339px;
 				margin-top: 50px;
 			}
 
-			& .text-holder {
+			.text-holder {
 				margin-top: 100px;
+				line-height: 176%;
 
-				& .text--bold {
+				.text--bold {
 					font-size: 14px;
 				}
 
-				& .text--light {
+				.text--light {
 					font-size: 14px;
 				}
 
-				& button {
-					width: 176px;
-					height: 44px;
-					margin-top: 62px;
-					margin-bottom: 66px;
+				.read-more-link {
+					font-size: 16px;
 				}
 			}
 		}
 
-		& .numbers-holder {
+		.numbers-holder {
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
 			gap: 60px;
 
-			& .number {
+			.number {
 				margin-bottom: 242px;
 
-				& .udder {
+				.udder {
 					width: 33px;
 					height: 50px;
+					margin-bottom: 30px;
 				}
 
-				& .apples {
+				.apples {
 					width: 50px;
 					height: 50px;
+					margin-bottom: 30px;
 				}
 
-				& .heart {
+				.heart {
 					width: 44px;
 					height: 50px;
+					margin-bottom: 30px;
 				}
 
-				& .title {
+				.title {
 					font-size: 48px;
 				}
 
-				& .text--bold {
+				.text--bold {
 					font-size: 14px;
+					line-height: 174%;
 				}
 			}
 		}
@@ -190,80 +207,79 @@
 @media (min-width:1024px) {
 	.howmade {
 		width: 100%;
+		height: 1382px;
+		background-image: url(/image/spilled-milk.webp);
+		background-repeat: no-repeat;
+		background-position: 0% 35%;
+		background-size: 100%;
 
-		& .title-holder {
+		.title-holder {
 			margin-top: 125px;
 
-			& .how-made--subtitle {
+			.how-made--subtitle {
 				font-size: 30px;
 			}
 
-			& .how-made--title {
+			.how-made--title {
 				font-size: 58px;
 			}
 		}
 
-		& .cow-info {
+		.cow-info {
+			padding: 0;
+			margin: 0;
 			display: flex;
 			flex-direction: row;
 			gap: 74px;
-			background-image: url(/image/spilled-milk.webp);
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: 100%;
 
-			& .cow-img {
+			.cow-img {
 				width: 516px;
 				height: 516px;
 				margin-top: 55px;
 			}
 
-			& .text-holder {
+			.text-holder {
 				margin-top: 106px;
 
-				& .text--bold {
+				.text--bold {
 					font-size: 16px;
-				}
-
-				& button {
-					width: 176px;
-					height: 44px;
-					margin-top: 45px;
-					margin-bottom: 146px;
 				}
 			}
 		}
 
-			& .numbers-holder {
+			.numbers-holder {
+				padding: 50px;
 				display: flex;
 				flex-direction: row;
-				justify-content: center;
-				gap: 60px;
+				justify-content: space-between;
 
-				& .number {
+				.number {
 					margin-bottom: 310px;
+					width: 270px;
 
-					& .udder {
+					.udder {
 						width: 33px;
 						height: 50px;
 					}
 
-					& .apples {
+					.apples {
 						width: 50px;
 						height: 50px;
 					}
 
-					& .heart {
+					.heart {
 						width: 44px;
 						height: 50px;
 					}
 
-					& .title {
+					.title {
 						font-size: 58px;
 					}
 
-					& .text--bold {
+					.text--bold {
 						font-size: 16px;
+						line-height: 176%;
+						letter-spacing: 2%;
 					}
 				}
 			}

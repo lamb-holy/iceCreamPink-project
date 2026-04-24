@@ -1,4 +1,5 @@
 .hero2 {
+    height: 624px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,15 +12,30 @@
     padding-bottom: 27px;
     text-align: center;
 
-    & .text-holder {
-        & .title {
+    @media (max-width: 767px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .text-holder {
+        @media (max-width: 767px) {
+            padding-block: 50px;
+            width: 287px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .title {
             color: $color-text-red;
             font-size: 34px;
             font-family: "Titan One";
             margin-bottom: 22px;
         }
 
-        & .text--light {
+        .text--light {
             color: $color-dots;
             font-size: 16px;
             font-family: "DM Sans";
@@ -29,33 +45,24 @@
             gap: 7px;
         }
 
-        & .hidden-text {
+        .hidden-text {
                 display: none;
             }
 
-        & button {
-            background-color: $color-text-red;
-            width: 256px;
-            height: 44px;
-            border: none;
-            border-radius: 22px;
+        .btn {           
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
             text-align: center;
-            margin-top: 329px;
-            font-weight: bold;
+            vertical-align: middle;
+            border-radius: 22px;
+            padding: 10px 50px;            
+            background-color: $color-text-red;
+            color: $color-text-white;
 
-            &:hover {
-                background-color: #920d2e;
-            }
-            
-            & a {
-                color: $color-dots;
-                font-family: "DM Sans";
-                font-size: 16px;
-                margin-left: 30px;
-            }
-
-            & i {
-                margin-left: 30px;
+            &:hover {                
+                color: #ffd2d2;
             }
         }
     }
@@ -63,51 +70,29 @@
 
 @media (min-width:768px) {
     .hero2 {
+        height: 586px;
         background-image: url(/image/hero-cow-tablet.webp);
         background-repeat: no-repeat;
         background-position: right bottom;
         background-size: contain;
-        padding-top: 142px;
-        padding-bottom: 67px;
+        padding: 142px 40px 67px 40px;
         text-align: start;
 
-        & .text-holder {
+        .text-holder {
             margin-left: 34px;
 
-            & .title {
+            .title {
                 font-size: 48px;
                 margin-bottom: 28px;
             }
 
-            & .text--light {
+            .text--light {
                 max-width: 336px;
             }
 
-            & .hidden-text {
+            .hidden-text {
                 display: flex;
                 margin-bottom: 23px;
-            }
-
-            & button {
-                background-color: $color-text-red;
-                width: 256px;
-                height: 44px;
-                border: none;
-                border-radius: 22px;
-                text-align: center;
-                margin-top: 30px;
-
-                & a {
-                    color: $color-dots;
-                    font-family: "DM Sans";
-                    font-size: 16px;
-                    margin-left: 30px;
-                    font-weight: bold;
-                }
-
-                & i {
-                    margin-left: 30px;
-                }
             }
         }   
     }
@@ -115,51 +100,28 @@
 
 @media (min-width:1024px) {
     .hero2 {
+        height: 553px;
         background-image: url(/image/hero-cow-laptop.webp);
         background-repeat: no-repeat;
         background-position: right -150px bottom 0;
         background-size: 756px 603px;
-        padding-top: 142px;
-        padding-bottom: 67px;
         text-align: start;
 
-        & .text-holder {
+        .text-holder {
             margin-left: 115px;
 
-            & .title {
+            .title {
                 font-size: 48px;
                 margin-bottom: 28px;
             }
 
-            & .text--light {
+            .text--light {
                 max-width: 446px;
             }
 
-            & .hidden-text {
+            .hidden-text {
                 display: flex;
                 margin-bottom: 24px;
-            }
-
-            & button {
-                background-color: $color-text-red;
-                width: 198px;
-                height: 44px;
-                border: none;
-                border-radius: 22px;
-                text-align: center;
-                margin-top: 20px;
-
-                & a {
-                    color: $color-dots;
-                    font-family: "DM Sans";
-                    font-size: 16px;
-                    margin-left: 30px;
-                    font-weight: bold;
-                }
-
-                & i {
-                    margin-left: 30px;
-                }
             }
         }   
     }

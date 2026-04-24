@@ -1,11 +1,11 @@
 .footer {
     width: 100%;
     background-color: $color-pink-bg;
-    height: 370px;
-    padding: 0 10px;
+    height: 380px;
+    padding: 20px 10px 0 10px;
 
     @media (min-width: 768px) {
-        height: 400px;
+        height: 420px;
     }
 
     @media (min-width: 1024px) {

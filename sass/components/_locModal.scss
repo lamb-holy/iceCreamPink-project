@@ -6,7 +6,7 @@
     height: 100%;
     background-color: rgba(124, 103, 103, 0.563);
     transition: opacity 0.3s ease;
-    z-index: 100;
+    z-index: 1000000000;
 }
 
 .backdrop-loc.is-hidden-loc {
@@ -20,12 +20,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 700px;
+    width: fit-content;
     min-height: 200px;
-    padding: 30px 60px;
+    padding: 40px 30px;
     background-color: rgba(255, 245, 246, 1);
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
     color: blue;
+
+    @media (min-width: 768px) {
+        width: 700px;
+        padding: 30px 60px;
+    }
 }
 
 .btn-close-loc {
@@ -45,55 +50,99 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        gap: 10%;
 
         &--buttons {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 5px;
+
+            @media (min-width: 768px) {
+                gap: 20px;
+            }
         }
 
         .btn {
             font-family: "DM Sans", sans-serif;
             font-weight: 700;
-            font-size: 16px;
+            font-size: 12px;
             line-height: 100%;
             letter-spacing: 0%;
             text-align: center;
             vertical-align: middle;
             border-radius: 22px;
-            height: 44px;
+            padding: 10px 30px;
+
+            @media (min-width: 768px) {
+                font-size: 16px;
+            }
         }
 
         .modalka--btn-red {
-            width: 242px;
             background-color: $color-text-red;
             color: white;
+
+            @media (min-width: 768px) {
+                padding: 13px 15px;
+            }
+
+            &:hover {
+                color: #ffd2d2;
+            }
         }
 
         .modalka--btn-white {
-            width: 180px;
             background-color: white;
             color: $color-text-red;
+
+            @media (min-width: 768px) {
+                padding: 0;
+                width: 180px;
+                height: 44px;
+            }
+
+            &:hover {                
+                background-color: $color-btn-hover;
+                color: $color-text-red;
+            }
         }
+    }
+
+    &-right {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: block;
+        }
+
     }
 
     &--title {
         font-family: "Titan One", cursive;
         font-weight: 400;
-        font-size: 58px;
+        font-size: 38px;
         line-height: 100%;
         letter-spacing: 4%;
         color: $color-text-red;
+
+        @media (min-width: 768px) {
+            font-size: 58px;
+        }
     }
 
     &--text {
-        margin-top: -40px;
-        font-family: "DM Sans", sans-serif;
-        font-weight: 700;
-        font-style: Bold;
-        font-size: 16px;
-        line-height: 176%;
-        letter-spacing: 4%;
-        color: rgba(0, 0, 0, 1);
+        display: none;
+
+        @media (min-width: 768px) {
+            display: block;
+            font-size: 16px;
+            line-height: 176%;
+            margin-top: -40px;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            font-style: Bold;
+            letter-spacing: 4%;
+            color: $color-black;
+        }
     }
 }

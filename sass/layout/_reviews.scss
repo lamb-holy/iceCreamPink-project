@@ -1,36 +1,72 @@
-.reviews{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 45px;
-    padding-top: 154px;
-    padding-bottom: 180px;
+.reviews {
+    height: 850px;
     text-align: center;
 
-    &-photo{
+    &-photo {
         width: 85px;
     }
 
-    &-paragraph{
+    &-paragraph {
+        position: relative;
         width: 280px;
         height: 308px;
-        display: block;
-        background-image: url("../images/bg-reviews.webp");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url("/image/linesBackground.webp") center / cover no-repeat;
         padding: 80px 50px 50px 50px;
-        margin-block: 40px;
+        margin-block: 30px 20px;
         font-weight: 600;
+
+        svg {
+            position: absolute;
+            top: 26px;
+            left: 65px;
+            z-index: 1;
+        }
+
+        hr {
+            display: none;
+        }
     }
 
-    &--container{
+    &--text {
+        width: 157px;
+        height: 239px;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 254.99999999999997%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: $color-black;
+        z-index: 10;
+    }
+
+    &--container {
+        width: 100%;
+        height: 100%;
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .bi-three-dots{
+    .bi-three-dots {
         color: $color-text-red;
+        font-size: 20px;
+    }
+
+    &-name {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 186%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: $color-black;
+        margin-block: 10px 25px;
     }
 
     .reviews-dots {
@@ -38,7 +74,7 @@
         gap: 15px;
     }
 
-    .bi-circle-fill{
+    .bi-circle-fill {
         font-size: 10px;
         color: #D9D9D9;
         transition: transform 0.3s ease, color 0.3s ease;
@@ -51,23 +87,88 @@
 
 
 @media (min-width: 768px) {
-    .reviews{
-        &-paragraph{
+    .reviews {
+        height: 900px;
+
+        &-paragraph {
             width: 620px;
             height: 164px;
             padding: 50px 58px;
             margin-block: 20px;
+            background: $color-text-white;
+
+            svg {
+                left: 40px;
+            }
+
+            hr {
+                display: block;
+                position: absolute;
+                top: 0;
+                width: 80%;
+                border: 1px solid rgb(181, 181, 181);
+                z-index: 100;
+            }
+
+            .hr-1 {
+                top: 55px;
+            }
+
+            .hr-2 {
+                top: 85px;
+            }
+
+            .hr-3 {
+                top: 115px;
+            }
+        }
+
+        &--text {
+            margin-top: 20px;
+            width: 460px;
+            height: 83px;
+            font-size: 14px;
+            line-height: 216%;
+            letter-spacing: 4%;
+        }
+
+        &-name {
+            font-size: 16px;
         }
     }
 }
 
 @media (min-width: 1024px) {
-    .reviews{
-        &-paragraph{
+    .reviews {
+        height: 1000px;
+
+        &-paragraph {
             width: 926px;
             height: 138px;
             margin-block: 15px;
             
+            svg {
+                left: 55px;
+            }
+
+            hr {
+                width: 813px;
+            }
+
+            .hr-3 {
+                display: none;
+            }
+        }
+
+        &--text {
+            width: 750px;
+            height: 52px;
+            font-size: 16px;
+            line-height: 186%;
+        }
+
+        &-name {
+            font-size: 16px;
         }
     }
 }
