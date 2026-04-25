@@ -83,14 +83,14 @@ main {
     background-color: #ffffff;
     padding: 10px 30px;
     border-radius: 60px;
+    transition: transform 5s ease-in;
   }
   .header .header--btn .bi-chevron-right {
     font-size: 12px;
   }
 }
 .header .header--btn:hover {
-  background-color: #ECEBEB;
-  color: #d41443;
+  transform: rotate(3686400deg);
 }
 .header .header--btn-modal {
   width: 100%;
@@ -361,6 +361,7 @@ body {
   color: #d41443;
   padding: 8px 15px;
   border-radius: 20px;
+  transition: transform 5s ease-in;
 }
 @media (min-width: 1024px) {
   .hero .hero--container .btn {
@@ -371,6 +372,7 @@ body {
 .hero .hero--container .btn:hover {
   background-color: #ECEBEB;
   color: #d41443;
+  transform: rotate(-3686400deg);
 }
 .hero .hero--container .pink--btn {
   background-color: #d41443;
@@ -878,6 +880,7 @@ body {
 }
 .modal-product-right {
   flex: 1;
+  margin-bottom: -20px;
 }
 .modal-product-list {
   list-style: disc;
