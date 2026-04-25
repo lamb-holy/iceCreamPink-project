@@ -993,6 +993,11 @@ body {
 .howmade .cow-info .cow-img {
   max-width: 100%;
   height: auto;
+  display: inline-block;
+  transition: transform 0.5s ease-out;
+}
+.howmade .cow-info .cow-img:hover {
+  transform: rotate(-2.5deg);
 }
 .howmade .cow-info .text-holder {
   font-size: 12px;
@@ -1010,6 +1015,7 @@ body {
   margin-bottom: 10px;
 }
 .howmade .cow-info .text-holder .read-more-link {
+  display: inline-block;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -1018,9 +1024,11 @@ body {
   padding: 10px 40px;
   color: #d41443;
   margin-bottom: 30px;
+  transition: transform 0.5s ease-out;
 }
 .howmade .cow-info .text-holder .read-more-link:hover {
   background-color: #ECEBEB;
+  transform: scale(1.07);
 }
 .howmade .numbers-holder {
   display: flex;
@@ -1033,6 +1041,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  transition: transform 0.5s ease-out;
+}
+.howmade .numbers-holder .number:hover {
+  transform: scale(1.04);
 }
 .howmade .numbers-holder .number .udder {
   width: 33px;
@@ -1416,9 +1428,11 @@ body {
 .locations-buttons .location--btn-red {
   background-color: #d41443;
   color: #ffffff;
+  transition: transform 0.4s ease-out;
 }
 .locations-buttons .location--btn-red:hover {
   color: #ffd2d2;
+  transform: rotate(-3000000deg);
 }
 .locations-buttons .location--btn-white {
   background-color: #ffffff;
@@ -1613,9 +1627,12 @@ body {
   padding: 10px 50px;
   background-color: #d41443;
   color: #ffffff;
+  display: inline-block;
+  transition: transform 0.5s ease-out;
 }
 .hero2 .text-holder .btn:hover {
   color: #ffd2d2;
+  transform: scale(1.07);
 }
 
 @media (min-width: 768px) {
@@ -1991,6 +2008,7 @@ body {
 }
 .footer--container {
   width: 100%;
+  position: relative;
 }
 .footer-left {
   width: 234px;
@@ -2057,6 +2075,11 @@ body {
   font-size: 30px;
   color: #ffa4b5;
 }
+.footer-socials a:hover {
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
 .footer--text {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
@@ -2100,6 +2123,17 @@ body {
   }
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(35deg);
+  }
+  100% {
+    transform: rotate(-35deg);
+  }
+}
 .runaway-btn {
   padding: 12px 24px;
   cursor: pointer;
@@ -2136,4 +2170,63 @@ body {
   padding: 12px 20px;
   background-color: #ffffff;
   color: #d41443;
+}
+
+.helicopter {
+  display: none;
+}
+
+@keyframes spin {
+  from {
+    transform: perspective(1000px) rotateX(70deg) rotateZ(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(70deg) rotateZ(360deg);
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 20;
+  }
+  100% {
+    top: -5180px;
+  }
+}
+@media (min-width: 768px) {
+  .helicopter {
+    display: block;
+    position: absolute;
+    left: 30%;
+    top: -125%;
+    width: -moz-fit-content;
+    width: fit-content;
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 12s;
+    animation-delay: 20s;
+    animation-timing-function: linear;
+    z-index: 100000;
+  }
+  .helicopter .fan {
+    position: relative;
+    top: 230px;
+    left: 18px;
+    perspective: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .helicopter .fan .bi-fan {
+    font-size: 200px;
+    transform-origin: center;
+    animation: spin 0.6s linear infinite;
+  }
+}
+@media (min-width: 1024px) {
+  .helicopter {
+    left: 45%;
+  }
 }
