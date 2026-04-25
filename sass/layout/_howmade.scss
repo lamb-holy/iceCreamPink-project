@@ -49,6 +49,12 @@ $color-btn-hover: #ECEBEB;
 		.cow-img {
 			max-width: 100%;
 			height: auto;
+			display: inline-block;
+			transition: transform 0.5s ease-out;
+
+			&:hover {
+				transform: rotate(-2.5deg);
+			}
 		}
 
 		.text-holder {
@@ -69,6 +75,7 @@ $color-btn-hover: #ECEBEB;
 			}
 
 			.read-more-link {
+				display: inline-block;
         		font-family: "DM Sans", sans-serif;
         		font-weight: 700;
         		font-size: 14px;
@@ -77,9 +84,11 @@ $color-btn-hover: #ECEBEB;
 				padding: 10px 40px;
 				color: $color-text-red;
 				margin-bottom: 30px;
+				transition: transform 0.5s ease-out;
 
 				&:hover {
 					background-color: $color-btn-hover;
+					transform: scale(1.07);
 				}
 			}
 		}
@@ -96,6 +105,11 @@ $color-btn-hover: #ECEBEB;
 			display: flex;
 			flex-direction: column;
 			gap: 10px;
+			transition: transform 0.5s ease-out;
+
+			&:hover {
+				transform: scale(1.04);
+			}
 
 			.udder {
 				width: 33px;

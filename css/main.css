@@ -993,6 +993,11 @@ body {
 .howmade .cow-info .cow-img {
   max-width: 100%;
   height: auto;
+  display: inline-block;
+  transition: transform 0.5s ease-out;
+}
+.howmade .cow-info .cow-img:hover {
+  transform: rotate(-2.5deg);
 }
 .howmade .cow-info .text-holder {
   font-size: 12px;
@@ -1010,6 +1015,7 @@ body {
   margin-bottom: 10px;
 }
 .howmade .cow-info .text-holder .read-more-link {
+  display: inline-block;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -1018,9 +1024,11 @@ body {
   padding: 10px 40px;
   color: #d41443;
   margin-bottom: 30px;
+  transition: transform 0.5s ease-out;
 }
 .howmade .cow-info .text-holder .read-more-link:hover {
   background-color: #ECEBEB;
+  transform: scale(1.07);
 }
 .howmade .numbers-holder {
   display: flex;
@@ -1033,6 +1041,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  transition: transform 0.5s ease-out;
+}
+.howmade .numbers-holder .number:hover {
+  transform: scale(1.04);
 }
 .howmade .numbers-holder .number .udder {
   width: 33px;
@@ -1613,9 +1625,12 @@ body {
   padding: 10px 50px;
   background-color: #d41443;
   color: #ffffff;
+  display: inline-block;
+  transition: transform 0.5s ease-out;
 }
 .hero2 .text-holder .btn:hover {
   color: #ffd2d2;
+  transform: scale(1.07);
 }
 
 @media (min-width: 768px) {

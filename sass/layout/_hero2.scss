@@ -73,9 +73,12 @@ $color-btn-hover: #ECEBEB;
             padding: 10px 50px;            
             background-color: $color-text-red;
             color: $color-text-white;
+            display: inline-block;
+            transition: transform 0.5s ease-out;
 
             &:hover {                
                 color: #ffd2d2;
+                transform: scale(1.07);
             }
         }
     }
