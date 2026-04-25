@@ -87,6 +87,7 @@ $color-btn-hover: #ECEBEB;
             background-color: $color-text-white;
             padding: 10px 30px;
             border-radius: 60px;
+            transition: transform 5s ease-in;
 
             .bi-chevron-right {
                 font-size: 12px;
@@ -94,8 +95,7 @@ $color-btn-hover: #ECEBEB;
         }
 
         &:hover {
-            background-color: $color-btn-hover;
-            color: $color-text-red;
+            transform: rotate(3686400deg);
         }
 
         &-modal {

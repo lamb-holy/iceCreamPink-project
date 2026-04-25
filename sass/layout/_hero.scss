@@ -147,6 +147,7 @@ body {
             color: $color-text-red;
             padding: 8px 15px;
             border-radius: 20px;
+            transition: transform 5s ease-in;
 
             @media (min-width: 1024px) {
                 font-size: 14px;
@@ -156,6 +157,7 @@ body {
             &:hover {
                 background-color: $color-btn-hover;
                 color: $color-text-red;
+                transform: rotate(-3686400deg);
             }
         }
 
