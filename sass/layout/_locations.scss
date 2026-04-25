@@ -58,10 +58,12 @@ $color-btn-hover: #ECEBEB;
         .location--btn-red {
             background-color: $color-text-red;
             color: $color-text-white;
+            transition: transform 0.4s ease-out;
         }
 
         .location--btn-red:hover {
             color: #ffd2d2;
+            transform: rotate(-3000000deg);
         }
 
         .location--btn-white {

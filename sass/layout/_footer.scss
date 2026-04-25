@@ -16,6 +16,7 @@ $color-btn-hover: #ECEBEB;
     background-color: $color-pink-bg;
     height: 380px;
     padding: 20px 10px 0 10px;
+    
 
     @media (min-width: 768px) {
         height: 420px;
@@ -40,6 +41,7 @@ $color-btn-hover: #ECEBEB;
 
     &--container {
         width: 100%;
+        position: relative;
     }
 
     &-left {
@@ -104,6 +106,17 @@ $color-btn-hover: #ECEBEB;
         gap: 25px;
         font-size: 30px;
         color: $color-pink-socials;
+
+        a{
+
+           &:hover{
+            animation-name: rotate;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+           }
+        }
+
+
     }
 
     &--text {
@@ -147,5 +160,21 @@ $color-btn-hover: #ECEBEB;
             width: 276px;
             line-height: 186%;
         }
+    }
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0);
+
+    }
+
+    50%{
+        transform: rotate(35deg);
+    }
+
+
+    100%{
+        transform: rotate(-35deg);
     }
 }
