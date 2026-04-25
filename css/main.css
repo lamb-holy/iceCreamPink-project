@@ -2099,3 +2099,41 @@ body {
     line-height: 186%;
   }
 }
+
+.runaway-btn {
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 22px;
+  padding: 12px 20px;
+  background-color: #ffffff;
+  color: #d41443;
+}
+@media (min-width: 768px) {
+  .runaway-btn {
+    padding: 12px 30px;
+  }
+}
+
+.runaway-btn.is-free {
+  position: absolute;
+  z-index: 9999;
+  transform: translate(0, 0);
+  transition: left 0.1s, top 0.1s;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 22px;
+  padding: 12px 20px;
+  background-color: #ffffff;
+  color: #d41443;
+}
