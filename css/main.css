@@ -1288,6 +1288,7 @@ body {
 .reviews .bi-three-dots {
   color: #d41443;
   font-size: 20px;
+  cursor: pointer;
 }
 .reviews-name {
   font-family: "DM Sans", sans-serif;
